@@ -1,0 +1,77 @@
+/* Main Grid Container */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 2fr 0.5fr 2.5fr 0.5fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "topHead topHead topHead topHead"
+    "headingImg headingImg headingImg headingImg"
+    "navBar navBar navBar navBar"
+    "article1 article1 article2 article2"
+    "footer footer footer footer";
+}
+
+/* Top Level header */
+.topHead {
+  grid-area: topHead;
+}
+
+/* Main Image Heading */
+.headingImg {
+  grid-area: headingImg;
+}
+
+/* Navbar Section */
+.navBar {
+  grid-area: navBar;
+}
+
+/* Article Selection #1 -- Left Side */
+.article1 {
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr 1.5fr 0.5fr;
+  grid-template-rows: 0.5fr 1.5fr 1.5fr 0.5fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "filler1 filler1 filler1 filler1"
+    "filler1 innerArticle1 innerArticle1 filler1"
+    "filler1 innerArticle1 innerArticle1 filler1"
+    "filler1 filler1 filler1 filler1 filler1";
+  grid-area: article1;
+  background: #F7D9C4;
+}
+.innerArticle1 {
+  grid-area: innerArticle1;
+}
+.filler1{
+    grid-area: filler1;
+    background: #E2E2DF;
+}
+
+/* Article Selection #2 -- Right Side */
+.article2 {
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr 1.5fr 0.5fr;
+  grid-template-rows: 0.5fr 1.5fr 1.5fr 0.5fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "filler2 filler2 filler2 filler2"
+    "filler2 innerArticle2 innerArticle2 filler2"
+    "filler2 innerArticle2 innerArticle2 filler2"
+    "filler2 filler2 filler2 filler2";
+  grid-area: article2;
+  background: #FAEDCB;
+}
+.innerArticle2 {
+  grid-area: innerArticle2;
+}
+.filler2{
+    grid-area: filler2;
+    background: #D2D2CF;
+}
+
+/* Footer Section */
+.footer {
+  grid-area: footer;
+}
