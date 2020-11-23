@@ -1,6 +1,10 @@
 body{
-    margin: 0;
-    width: 100%;
+  background-color: #ece9d4;
+  color: #333333;
+  /* TEMPORARY FONT */ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  font-size: 15pt;
+  margin: 0;
+  width: 100%;
 }
 
 
