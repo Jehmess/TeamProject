@@ -1,6 +1,6 @@
 body{
   background: var(--lm-body);
-  color: #333333;
+  color: var(--lm-default) ;
   /* TEMPORARY FONT */ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
   font-size: 15pt;
   margin: 0;
@@ -8,6 +8,11 @@ body{
 }
 
 :root {
+
+  /* TEXT */
+  --lm-default: #333333;
+  --dm-default: #A6B7BA;
+
   /* LIGHT MODE BACKGROUNDS */
   --lm-body: #ECE9D4;
   --lm-header: #44656C;
@@ -19,7 +24,7 @@ body{
   --dm-body: #121212;
   --dm-header: #263140;
   --dm-nav: #35515F;
-  --dm-footer: #263140;
+  --dm-footer: #263140;  
 }
 
 /* Main Grid Container */
