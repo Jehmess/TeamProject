@@ -20,7 +20,7 @@ body{
     "navBar navBar navBar navBar"
     "main main main main"
     "footer footer footer footer";
-  height: 200vh;
+  height: 150vh;
 }
 
 /* Top Level header */
@@ -65,8 +65,8 @@ body{
 /* Main Section */
 .main{
   display: grid;
-  grid-template-columns: 2fr .5fr 2fr;
-  grid-template-rows: 1.5fr 1.5fr .5fr;
+  grid-template-columns: 1.5fr .5fr 1.5fr;
+  grid-template-rows: repeat(3,1fr);
   grid-template-areas:
   "overview overview overview"
   "articles filler aboutUs"
