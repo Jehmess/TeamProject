@@ -1,0 +1,50 @@
+body{
+    background: var(--lm-body);
+    color: var(--lm-default) ;
+    /* TEMPORARY FONT */ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    font-size: 15pt;
+    margin: 0;
+    width: 100%;
+  }
+  
+  :root {
+  
+    /* TEXT */
+    --lm-default: #333333;
+    --dm-default: #A6B7BA;
+  
+    /* LIGHT MODE BACKGROUNDS */
+    --lm-body: #ECE9D4;
+    --lm-header: #44656C;
+    --lm-nav: #557379;
+    --lm-footer: #44656C;
+    
+  
+    /* DARK MODE BACKGROUNDS */
+    --dm-body: #121212;
+    --dm-header: #263140;
+    --dm-nav: #35515F;
+    --dm-footer: #263140; 
+    
+  }
+  
+ 
+
+  
+  
+  /* For mobile phones: */
+  @media only screen and (max-width: 600px) {
+    body {
+        font-size: 12pt;
+    }
+  }
+  
+  /* For tablets: */
+  @media only screen and (min-width: 600px) {
+    
+  }
+  
+  /* For desktop: */
+  @media only screen and (min-width: 768px) {
+    
+  }
