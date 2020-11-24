@@ -1,0 +1,133 @@
+body{
+  background-color: #ece9d4;
+  color: #333333;
+  /* TEMPORARY FONT */ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  font-size: 15pt;
+  margin: 0;
+  width: 100%;
+}
+
+
+/* Main Grid Container */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 2fr 0.5fr 2.5fr 0.5fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "topHead topHead topHead topHead"
+    "headingImg headingImg headingImg headingImg"
+    "navBar navBar navBar navBar"
+    "article1 article1 article2 article2"
+    "footer footer footer footer";
+  height: 150vh;
+}
+
+/* Top Level header */
+.topHead {
+  grid-area: topHead;
+  background: #44656c;
+}
+
+/* Main Image Heading */
+.headingImg {
+  grid-area: headingImg;
+  background: #c6def1;  
+}
+
+/* Navbar Section */
+.navBar {
+  grid-area: navBar;
+  background: #557379;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  gap: 5px;
+  grid-template-areas: 
+  "nav1 nav2 nav3 nav4";
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px #333333;
+  text-shadow: 2px 2px #333333;
+}
+.nav1{
+    grid-area: nav1;
+}
+.nav2{
+    grid-area: nav2;
+}
+.nav3{
+    grid-area: nav3;
+}
+.nav4{
+    grid-area: nav4;
+}
+
+/* Article Selection #1 -- Left Side */
+.article1 {
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr 1.5fr 0.5fr;
+  grid-template-rows: 0.5fr 1.5fr 1.5fr 0.5fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "filler1 filler1 filler1 filler1"
+    "filler1 innerArticle1 innerArticle1 filler1"
+    "filler1 innerArticle1 innerArticle1 filler1"
+    "filler1 filler1 filler1 filler1 filler1";
+  grid-area: article1;
+  background: #f7d9c4;
+}
+.innerArticle1 {
+  grid-area: innerArticle1;
+  background: #f9c6c9;
+}
+.filler1 {
+  grid-area: filler1;
+  background: #e2e2df;
+}
+
+/* Article Selection #2 -- Right Side */
+.article2 {
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr 1.5fr 0.5fr;
+  grid-template-rows: 0.5fr 1.5fr 1.5fr 0.5fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "filler2 filler2 filler2 filler2"
+    "filler2 innerArticle2 innerArticle2 filler2"
+    "filler2 innerArticle2 innerArticle2 filler2"
+    "filler2 filler2 filler2 filler2";
+  grid-area: article2;
+  background: #faedcb;
+}
+.innerArticle2 {
+  grid-area: innerArticle2;
+  background: #f2c6de;
+}
+.filler2 {
+  grid-area: filler2;
+  background: #d2d2cf;
+}
+
+/* Footer Section */
+.footer {
+  grid-area: footer;
+  background: #44656c;
+}
+
+
+/* For mobile phones: */
+@media only screen and (max-width: 600px) {
+  body {
+      font-size: 12pt;
+  }
+}
+
+/* For tablets: */
+@media only screen and (min-width: 600px) {
+  
+}
+
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+  
+}
