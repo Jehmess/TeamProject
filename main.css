@@ -27,25 +27,28 @@ body{
 /* Top Level header */
 .topHead {
   grid-area: topHead;
-  background: #c9e4de;
+  background: #44656c;
 }
 
 /* Main Image Heading */
 .headingImg {
   grid-area: headingImg;
-  background: #c6def1;
+  background: #c6def1;  
 }
 
 /* Navbar Section */
 .navBar {
   grid-area: navBar;
-  background: #dbcdf0;
+  background: #557379;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
   gap: 5px;
   grid-template-areas: 
   "nav1 nav2 nav3 nav4";
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px #333333;
+  text-shadow: 2px 2px #333333;
 }
 .nav1{
     grid-area: nav1;
@@ -109,5 +112,23 @@ body{
 /* Footer Section */
 .footer {
   grid-area: footer;
-  background: #ee5963;
+  background: #44656c;
+}
+
+
+/* For mobile phones: */
+@media only screen and (max-width: 600px) {
+  body {
+      font-size: 12pt;
+  }
+}
+
+/* For tablets: */
+@media only screen and (min-width: 600px) {
+  
+}
+
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+  
 }
