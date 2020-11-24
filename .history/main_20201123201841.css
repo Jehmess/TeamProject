@@ -7,6 +7,11 @@ body{
   width: 100%;
 }
 
+:root{
+  --black: #000000
+}
+
+
 
 /* Main Grid Container */
 .grid-container {
