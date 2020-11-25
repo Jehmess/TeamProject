@@ -10,10 +10,6 @@ body {
 }
 
 :root {
-  /* TEXT */
-  --lm-default: #333333;
-  --dm-default: #a6b7ba;
-
   /* LIGHT MODE BACKGROUNDS */
   --lm-body: #ece9d4;
   --lm-header: #44656c;
@@ -25,6 +21,10 @@ body {
   --dm-header: #263140;
   --dm-nav: #35515f;
   --dm-footer: #263140;
+
+    /* TEXT */
+    --lm-default: #333333;
+    --dm-default: #a6b7ba;
 }
 
 .grid-container {
@@ -39,6 +39,7 @@ body {
 }
 .donateHeading {
   grid-area: donateHeading;
+  background: var(--lm-header);
 }
 .donateTitle {
   grid-area: donateTitle;

@@ -1,18 +1,17 @@
 body{
   background: var(--lm-body);
   color: var(--lm-default) ;
-  /* TEMPORARY FONT */ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  /* TEMPORARY FONT */ font-family: Verdana,Geneva,sans-serif;  
   font-size: 15pt;
   margin: 0;
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 :root {
-
-  /* TEXT */
-  --lm-default: #333333;
-  --dm-default: #A6B7BA;
-
   /* LIGHT MODE BACKGROUNDS */
   --lm-body: #ECE9D4;
   --lm-header: #44656C;
@@ -25,6 +24,13 @@ body{
   --dm-header: #263140;
   --dm-nav: #35515F;
   --dm-footer: #263140;  
+
+  /* TEXT */
+  --lm-default: #333333;
+  --lm-navtxt: #bbdbd1;
+  
+  --dm-default: #A6B7BA;
+
 }
 
 /* Main Grid Container */
@@ -46,13 +52,48 @@ body{
 .topHead {
   grid-area: topHead;
   background: var(--lm-header);
+  color: var(--lm-navtxt);
+  text-align: right;
 }
 
 /* Main Image Heading */
 .headingImg {
   grid-area: headingImg;
+  width: 100%; 
+  height: 100%;
   background: #c6def1; 
 }
+
+.headingImg:hover .banner,
+.headingImg:focus .banner {
+  transform: scale(1.1);
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+  background: url(images/coralreef.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: all .5s;
+}
+
+.banner::before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;  
+}
+
+.headingImg:hover .banner:before,
+.headingImg:focus .banner:before {
+  display: block;
+}
+
 
 /* Navbar Section */
 .navBar {
@@ -64,12 +105,22 @@ body{
   gap: 5px;
   grid-template-areas: 
   "nav1 nav2 nav3 nav4";
+
+  /* NAVTEXT */ 
+  color: var(--lm-navtxt);
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
   text-transform: uppercase;
-  -webkit-text-stroke: 1px #333333;
-  text-shadow: 2px 2px #333333;
+  -webkit-text-stroke: 2px #333333;
+  text-shadow: 3px 3px #333333;
 }
+.navBar a:link {
+  color: var(--lm-navtxt);  
+}
+
 .nav1{
-    grid-area: nav1;
+    grid-area: nav1;    
 }
 .nav2{
     grid-area: nav2;
@@ -82,7 +133,7 @@ body{
 }
 
 /* Main Section */
-.main{
+.main{  
   display: grid;
   grid-template-columns: 2fr .5fr 2fr;
   grid-template-rows: 1.5fr 1.5fr .5fr;
