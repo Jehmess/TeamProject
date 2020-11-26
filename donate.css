@@ -29,12 +29,13 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.2fr 0.5fr 2fr;
+  grid-template-rows: 0.2fr 0.5fr 2fr 0.2fr;
   gap: 0px 0px;
   grid-template-areas:
     "donateHeading donateHeading donateHeading donateHeading"
     "donateTitle donateTitle donateTitle donateTitle"
-    "donateMain donateMain donateMain donateMain";
+    "donateMain donateMain donateMain donateMain"
+    "donateFooter donateFooter donateFooter donateFooter";
 }
 
 .donateHeading {
@@ -61,6 +62,11 @@ body {
 .donateMain {
   grid-area: donateForm;
  
+}
+
+.donateFooter {
+  grid-area: donateFooter;
+  background: var(--lm-header);
 }
 
 /* For mobile phones: */
