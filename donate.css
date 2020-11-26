@@ -2,8 +2,7 @@ body {
   background: var(--lm-body);
   color: var(--lm-default);
   /* TEMPORARY FONT */
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 15pt;
   margin: 0;
   width: 100%;
@@ -37,16 +36,33 @@ body {
     "donateTitle donateTitle donateTitle donateTitle"
     "donateMain donateMain donateMain donateMain";
 }
+
 .donateHeading {
   grid-area: donateHeading;
   background: var(--lm-header);
 }
+
+.socialmedia {
+  text-align: right;
+}
+
+.socialmedia img {
+  margin-top: 10px;
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+}
+
 .donateTitle {
   grid-area: donateTitle;
 }
+
 .donateMain {
   grid-area: donateForm;
+ 
 }
+
 /* For mobile phones: */
 @media only screen and (max-width: 600px) {
   body {
