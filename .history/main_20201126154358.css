@@ -7,8 +7,8 @@ body{
   width: 100%;
 }
 .body2{
-  background: var(--dm-body);
-  color: var(--dm-default) ;
+  background: var(--lm-body);
+  color: var(--lm-default) ;
   font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
   font-size: 14pt;
   margin: 0;
