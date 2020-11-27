@@ -67,7 +67,7 @@ a {
 .topHead2 {
   grid-area: topHead;
   background: var(--dm-header);
-  color: var(--lm-navtxt);
+  color: var(--dm-default);
   text-align: right;
 }
 
@@ -275,6 +275,7 @@ a {
 .footer2 {
   grid-area: footer;
   background: var(--dm-header);
+  color: var(--dm-default);
 }
 
 .socialmedia {
