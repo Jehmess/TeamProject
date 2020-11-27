@@ -246,6 +246,12 @@ a {
   background: var(--lm-header);
 }
 
+.footer p, address, h3 {
+  color: var(--lm-navtxt);
+  text-align: right;
+  padding-right: 10px;
+}
+
 .footer2 {
   grid-area: footer;
   background: var(--dm-header);
