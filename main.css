@@ -206,6 +206,27 @@ a {
   -webkit-text-stroke: 2px #333333;
   text-shadow: 3px 3px #333333;
 }
+
+.navBar2 {
+  grid-area: navBar;
+  background: var(--dm-nav);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  gap: 5px;
+  grid-template-areas: 
+  "nav1 nav2 nav3 nav4";
+
+  /* NAVTEXT */ 
+  color: var(--dm-default);
+  font-family: Verdana,Geneva,sans-serif; 
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px #333333;
+  text-shadow: 3px 3px #333333;
+}
 .navBar a, a:link {
   color: var(--lm-navtxt);  
 }
