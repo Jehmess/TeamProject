@@ -64,6 +64,46 @@ a {
   text-align: right;
 }
 
+.topHead2 {
+  grid-area: topHead;
+  background: var(--dm-header);
+  color: var(--lm-navtxt);
+  text-align: right;
+}
+
+.deepSea {
+  display: inline-block;
+  background-color: var(--lm-navtxt);  
+  color: var(--lm-default);  
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;  
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.deepSea:active {
+  background-color: var(--lm-navtxt);
+  transform: translateY(2px);
+}
+
+.deepSea a, a:link {
+  color: var(--lm-default);   
+}
+
+.deepSea:hover {
+  background-color: var(--dm-header);
+  color: var(--dm-default); 
+  transition: 0.5s;
+}
+
+
 .donatebutton {
   display: inline-block;
   background-color: var(--lm-navtxt);  
@@ -112,7 +152,7 @@ a {
 .banner {
   width: 100%;
   height: 100%;
-  background: url(images/coralreef.jpeg);
+  background: url(images/coralreef.jpeg); /* Stock Photo by Adobe Photo Stock  */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -122,7 +162,7 @@ a {
 .darkMode{
   width: 100%;
   height: 100%;
-  background: url(images/deepSea.jpg);
+  background: url(images/deepSea.png); /* Stock Photo by Adobe Photo Stock  */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -230,6 +270,11 @@ a {
 .footer {
   grid-area: footer;
   background: var(--lm-header);
+}
+
+.footer2 {
+  grid-area: footer;
+  background: var(--dm-header);
 }
 
 .socialmedia {
