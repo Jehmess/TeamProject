@@ -127,7 +127,6 @@ a {
   transition: 0.5s;
 }
 
-
 /* Main Image Heading */
 .headingImg {
   grid-area: headingImg;
@@ -142,9 +141,9 @@ a {
   background: url(images/coralreef.jpeg); /* Stock Photo by Adobe Photo Stock  */
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  /*transition: all .5s;*/
+  background-size: cover;  
 }
+
 .darkMode{
   width: 100%;
   height: 100%;
@@ -164,11 +163,12 @@ a {
   gap: 5px;
   grid-template-areas: 
   "nav1 nav2 nav3 nav4";
+  
   /* NAVTEXT */ 
   color: var(--lm-navtxt);
-  font-family: Verdana,Geneva,sans-serif; 
+  font-family: 'Montserrat', sans-serif;
   font-size: 40px;
-  font-weight: bold;
+  font-weight: 800;
   text-align: center;
   text-transform: uppercase;
   -webkit-text-stroke: 2px #333333;
@@ -187,9 +187,9 @@ a {
 
   /* NAVTEXT */ 
   color: var(--dm-default);
-  font-family: Verdana,Geneva,sans-serif; 
+  font-family: 'Montserrat', sans-serif;
   font-size: 40px;
-  font-weight: bold;
+  font-weight: 900;
   text-align: center;
   text-transform: uppercase;
   -webkit-text-stroke: 2px #333333;
@@ -202,14 +202,28 @@ a {
 .nav1{
     grid-area: nav1;    
 }
+.nav1:hover {
+  background-color: var(--lm-header);
+}
+
 .nav2{
     grid-area: nav2;
 }
+.nav2:hover {
+  background-color: var(--lm-header);
+}
+
 .nav3{
     grid-area: nav3;
 }
+.nav3:hover {
+  background-color: var(--lm-header);
+}
 .nav4{
     grid-area: nav4;
+}
+.nav4:hover {
+  background-color: var(--lm-header);
 }
 
 /* Main Section */
@@ -226,14 +240,14 @@ a {
   width: 100%;  
 }
 
-.overview{
-  grid-area: overview;
+.overview{  
+  grid-area: overview; 
   text-align: justify;
   padding: 10px;
 }
 
 .articles{
-  grid-area: articles;
+  grid-area: articles; 
   text-align: justify;
   padding: 10px;
 }
@@ -245,7 +259,7 @@ a {
 }
 
 .donate{
-  grid-area: donate;
+  grid-area: donate; 
   text-align: justify;
   padding: 10px;
 }
