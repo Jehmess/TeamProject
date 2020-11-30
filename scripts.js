@@ -9,5 +9,5 @@ function deepSea(){
     let element4 = document.getElementById('footer')
     element4.classList.toggle('footer2');
     let element5 = document.getElementById('navBar')
-    element5.classList.toggle("navBar2");
+    element5.classList.toggle("navBar2");    
 };

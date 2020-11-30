@@ -19,6 +19,25 @@ a {
   text-decoration: none;
 }
 
+h2 {
+  font-family: 'Oswald', sans-serif;
+  color: #444444;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 1px #d8d8d8;  
+}
+
+h3 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  text-shadow: 1px 1px #444444;
+}
+
+.h3-dm {
+  color: var(--dm-default);
+}
+
+
 :root {
   /* LIGHT MODE BACKGROUNDS */
   --lm-body: #ECE9D4;
@@ -98,7 +117,7 @@ a {
   transition: 0.5s;
 }
 
-
+/* DONATE BUTTON */
 .donatebutton {
   display: inline-block;
   background-color: var(--lm-navtxt);  
@@ -126,6 +145,7 @@ a {
   background-color: #ACD7CC;
   transition: 0.5s;
 }
+
 
 /* Main Image Heading */
 .headingImg {
@@ -164,7 +184,7 @@ a {
   grid-template-areas: 
   "nav1 nav2 nav3 nav4";
   
-  /* NAVTEXT */ 
+  /* NAVTEXT(LM) */ 
   color: var(--lm-navtxt);
   font-family: 'Montserrat', sans-serif;
   font-size: 40px;
@@ -185,7 +205,7 @@ a {
   grid-template-areas: 
   "nav1 nav2 nav3 nav4";
 
-  /* NAVTEXT */ 
+  /* NAVTEXT(DM) */ 
   color: var(--dm-default);
   font-family: 'Montserrat', sans-serif;
   font-size: 40px;
@@ -275,9 +295,9 @@ a {
   background: var(--lm-header);
 }
 
-.footer p, address, h3 {
+.footer p, address, h3, .socialmedia {
   color: var(--lm-navtxt);
-  text-align: right;
+  text-align: center;
   padding-right: 10px;
 }
 
@@ -289,7 +309,7 @@ a {
 
 .socialmedia {
   color: var(--lm-navtxt);
-  text-align: right;
+  
 }
 
 .socialmedia img {
@@ -298,6 +318,14 @@ a {
   width: 25px;
   height: 25px;
   padding: 5px;
+}
+
+.socialmedia img:hover {
+  opacity: 0.7;
+}
+
+address {
+  text-transform: uppercase;
 }
 
 
