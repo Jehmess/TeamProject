@@ -15,3 +15,6 @@ function deepSea(){
     let element6 = document.getElementById('h3-dm')
     element6.classList.toggle('h3-dm')
 };
+
+// TODO LOCAL STORAGE COOKIES
+// if dark-mode = true
