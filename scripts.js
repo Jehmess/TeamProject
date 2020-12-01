@@ -8,6 +8,10 @@ function deepSea(){
     element3.classList.toggle('topHead2');
     let element4 = document.getElementById('footer')
     element4.classList.toggle('footer2');
+
     let element5 = document.getElementById('navBar')
-    element5.classList.toggle("navBar2");    
+    element5.classList.toggle("navBar2");
+    // TODO Only Grabs one ID
+    let element6 = document.getElementById('h3-dm')
+    element6.classList.toggle('h3-dm')
 };
