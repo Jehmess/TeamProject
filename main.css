@@ -264,13 +264,13 @@ h3 {
   margin-right: auto;
 }
 
-.overview{  
+.overview{    
   grid-area: overview; 
   text-align: justify;
   padding: 10px;
 }
 
-.articles{
+.articles{  
   grid-area: articles; 
   text-align: justify;
   padding: 10px;
@@ -344,6 +344,21 @@ address {
   opacity: 0.7;
 }
 
+.topsocialmedia {
+  color: var(--lm-navtxt);
+  text-align: right;
+}
+.topsocialmedia img {
+  width: 30px;
+  height: 30px;  
+  padding: 5px;
+  padding-top: 10px;
+  margin-right: 5px;
+}
+.topsocialmedia img:hover {
+  opacity: 0.7;
+}
+
 
 form {  
   color: var(--lm-navtxt);
@@ -362,12 +377,16 @@ input[type=text], select, textarea {
   resize: none;
 }
 
-/* MEDIA QUERIES */
+/* MEDIA QUERIES */ 
 
 /* For mobile phones: */
 @media only screen and (max-width: 600px) {
   body {
-      font-size: 12pt;
+      font-size: 12pt;      
+  }
+  .banner, .banner img {
+    display: none;
+    visibility: hidden;
   }
 }
 
