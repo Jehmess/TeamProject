@@ -252,14 +252,16 @@ h3 {
 .main{  
   display: grid;
   grid-template-columns: 2fr .5fr 2fr;
-  grid-template-rows: 1.5fr 1.5fr .5fr;
+  grid-template-rows: .5fr 1.5fr .5fr;
   grid-template-areas:
   "overview overview overview"
   "articles filler aboutUs"
   "donate donate donate"
   ;
   grid-area: main;
-  width: 100%;  
+  width: 80%;  
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .overview{  
@@ -343,20 +345,21 @@ address {
 }
 
 
-form {
-  border: 1px solid #333333;
+form {  
+  color: var(--lm-navtxt);
+  text-align: right;
+  text-transform: uppercase;
   padding: 10px;
 }
 
-input[type=text], select, textarea {
-  width: 50%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical horizontal /* Allow the user to vertically resize the textarea (not horizontally) */
+input[type=text], select, textarea {  
+  width: 50%; 
+  padding: 15px; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 5px; 
+  margin-bottom: 15px;   
+  resize: none;
 }
 
 /* MEDIA QUERIES */
