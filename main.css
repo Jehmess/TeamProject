@@ -297,6 +297,18 @@ h3 {
   background: var(--lm-header);  
 }
 
+.contact{  
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: 1.5fr ;
+  grid-template-areas:
+  "contact contact contact"  
+  ;
+  grid-area: contact;
+  width: 100%;  
+}
+
+
 .footer p, address, h3, .socialmedia {
   color: var(--lm-navtxt);
   margin-left: auto;
@@ -332,8 +344,6 @@ address {
 form {
   background-color: #444444;
   border: 1px solid #333333;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* MEDIA QUERIES */
