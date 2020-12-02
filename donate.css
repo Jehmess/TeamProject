@@ -30,12 +30,12 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.2fr 0.5fr 2fr 0.2fr;
-  gap: 0px 0px;
   grid-template-areas:
     "donateHeading donateHeading donateHeading donateHeading"
     "donateTitle donateTitle donateTitle donateTitle"
     "donateMain donateMain donateMain donateMain"
     "donateFooter donateFooter donateFooter donateFooter";
+    height: 100vh;
 }
 
 .donateHeading {
@@ -60,8 +60,51 @@ body {
 }
 
 .donateMain {
-  grid-area: donateForm;
- 
+  grid-area: donateMain;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+  "donate-form donate-buttons";
+}
+.donate-form{
+  grid-area: donate-form;
+  background: indianred;
+}
+.donate-buttons{
+  grid-area: donate-buttons;
+  background: lavender;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: 
+  "amount-title amount-title"
+  "amount-buttons amount-buttons"
+  "amount-buttons amount-buttons"
+  "amount-input amount-input";
+  }
+.amount-title{
+  text-align: center;
+  text-decoration: underline;
+  font-size: 25pt;
+  grid-area: amount-title;
+}
+.amount-buttons{
+  border: none;
+  color: var(--lm-default);
+  padding: 50px 50px;
+  text-align: center;
+  text-decoration: none;
+  border: solid 2px;
+  border-radius: 30px;
+  font-size: 20pt; 
+  margin: 5px;
+  
+}
+.amount-input{
+  grid-area: amount-input;
+  margin: 5px;
+  padding: 5px;
 }
 
 .donateFooter {
