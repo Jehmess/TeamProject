@@ -16,18 +16,25 @@
     <!-- Script JS Page -->
     <script src="scripts.js"></script>
     
+    <!-- Unique Browser Icon -->
     <link rel="icon" type="image/png" href="images/favicon1.png">   
+    
     <title>Save The Ocean</title>
   </head>
 
   <body id='body'>
     <div class="grid-container">
       <div id='topHead' class="topHead">       
-        <button id="deepSea" class="deepSea" title="Dark Mode" onclick='deepSea();'>go deep</button>      
-        <button class="donatebutton"><a href="donate.html" title="Donate Today!">Donate</a></button>                                 
+        <input type="button" id="deepSea" class="deepSea" title="Dark Mode" onclick='deepSea();' value="go deep">      
+        <input type="button" onclick="location.href='donate.html';" class="donatebutton" title="Donate Today!" value="Donate"> 
+        <div class="socialmedia">
+          <a href="https://www.facebook.com/"><img src="images/facebook.svg" alt="Facebook" title="Facebook"></a>
+          <a href="https://www.instagram.com/"><img src="images/instagram.svg" alt="Instagram" title="Instagram"></a>
+          <a href="https://twitter.com"><img src="images/twitter.svg" alt="Twitter" title="Twitter"></a>           
+        </div>                                 
       </div>
       
-      <div class="headingImg"> <!-- CSS effects needs altering -->
+      <div class="headingImg"> 
         <div id="banner" class='banner'></div>
       </div>
 
@@ -39,7 +46,7 @@
             <p><a href="#aboutUs">About</a></p>
           </div>
           <div class="nav3">
-            <p>Contact</p>
+            <p><a href="#contact">Contact</a></p>
           </div>
           <div class="nav4">
             <p><a href="donate.html">Donate</a></p>
@@ -103,23 +110,39 @@
         </div>
       </div>
       <div id='footer' class="footer">
-        <!-- TODO Mail:to html- Email address contact -->
-        <div class="socialmedia">       
+        <!-- TODO Mail:to html- Email address contact -->        
+        <address>
+          Save the Ocean<br>
+          123 Ocean Ave<br>
+          Unit 203<br>
+          Ottawa, ON<br>
+          K1K 1K1
+        </address>
+
+        <h3>Save the Ocean<br>
+          (613) 123-4567
+        </h3>   
+
+        <div class="socialmedia">    
+          <h3>Connect With Us</h3>            
           <a href="https://www.facebook.com/"><img src="images/facebook.svg" alt="Facebook" title="Facebook"></a>
           <a href="https://www.instagram.com/"><img src="images/instagram.svg" alt="Instagram" title="Instagram"></a>
-          <a href="https://twitter.com"><img src="images/twitter.svg" alt="Twitter" title="Twitter"></a>
-        </div>
-        <p>
-          <h3>Save the Ocean</br>
-            (613) 123-4567
-          </h3>
-          <address>
-            123 Ocean Ave</br>
-            Unit 203</br>
-            Ottawa, ON</br>
-            K1K 1K1
-          </address>
-        </p>
+          <a href="https://twitter.com"><img src="images/twitter.svg" alt="Twitter" title="Twitter"></a>           
+        </div> 
+        
+        <form class="contact" id="contact">
+
+          <!--
+            NAME:
+            Email: 
+            Message
+            Join Newsletter <checkbox>
+            Submit
+          -->
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac congue nibh. Duis lorem ipsum, pellentesque eget sem vitae, venenatis lobortis nisi. Etiam dignissim quis arcu sed sollicitudin. Praesent lacinia neque velit, quis luctus odio tempor sit amet. Nulla ultrices, orci non tincidunt sodales, ipsum dolor auctor sem, at convallis massa nulla eu ipsum. Nulla convallis tortor et nibh vehicula tincidunt. Nullam hendrerit porttitor tincidunt. Curabitur ultrices porta volutpat. Morbi magna urna, consequat et lectus vel, pulvinar mollis magna. Nunc in ipsum enim. Proin ac nunc in libero tristique congue. 
+          </p>
+        </form>
       </div>
     </div>
   </body>
