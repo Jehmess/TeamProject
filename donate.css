@@ -62,7 +62,7 @@ body {
 .donateMain {
   grid-area: donateMain;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 2fr 1.5fr;
   grid-template-rows: 1fr;
   grid-template-areas: 
   "donate-form donate-buttons";
@@ -70,7 +70,22 @@ body {
 .donate-form{
   grid-area: donate-form;
   background: indianred;
+  text-align: left;
+  }
+
+.the-form{
+  margin-left: 20px;
+  font-size: 20pt;
 }
+
+.the-form label{
+  font-size: 25pt;
+}
+.the-form input{
+  width: 75%;
+  height: 30px;
+}
+
 .donate-buttons{
   grid-area: donate-buttons;
   background: lavender;
