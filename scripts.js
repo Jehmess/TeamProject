@@ -55,9 +55,9 @@ function checkInputs(){
 
 function setErrorFor(input, message){
     const formControl = input.parentElement; 
-    const errorMsg = formControl.querySelector('p');
+    const errorMsg = formControl.querySelectorAll('small');
     // add error message
     errorMsg.innerText = message;
     // add error class
-    formControl.className = 'form-control error';
+    document.getElementById('hidden-p').className = '.form-control error'
 }

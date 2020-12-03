@@ -1,7 +1,7 @@
 body {
   background: var(--lm-body);
   color: var(--lm-default);
-  /* TEMPORARY FONT */
+  /* TEMpORARY FONT */
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-size: 15pt;
@@ -84,7 +84,7 @@ body {
   width: 100%;
   margin-bottom: 20px;
 }
-.form-control p{
+.form-control small{
   visibility: hidden;
   position: absolute;
   bottom: 0;
@@ -98,7 +98,7 @@ body {
 .form-control.error input{
   border-color: red;
 }
-.form-control.error p{
+.form-control.error small{
   visibility: visible;
   color: red;
 }
