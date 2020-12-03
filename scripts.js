@@ -18,3 +18,46 @@ function deepSea(){
 
 // TODO LOCAL STORAGE COOKIES
 // if dark-mode = true
+
+
+
+
+
+// * Donation Page 
+// * Feild validation
+const form = document.getElementById('donateForm');
+// inputs
+const name = document.getElementById('fullName');
+const phone = document.getElementById('telephone');
+const address = document.getElementById('address');
+const postCode = document.getElementById('postalCode');
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    checkInputs();
+});
+function checkInputs(){
+    const nameValue = name.value.trim();
+    const phoneValue = phone.value.trim();
+    const addressValue = address.value.trim();
+    const postCodeVale = postCode.value.trim();
+
+    if (nameValue === ''){
+        //show error
+        //add error class
+        setErrorFor(nameValue, 'Name can not be blank')
+    } else{
+        // add success class
+        setSuccessFor(nameValue)
+    }
+}
+
+function setErrorFor(input, message){
+    const formControl = input.parentElement; 
+    const errorMsg = formControl.querySelector('p');
+    // add error message
+    errorMsg.innerText = message;
+    // add error class
+    formControl.className = 'form-control error';
+}

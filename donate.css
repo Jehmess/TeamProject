@@ -1,11 +1,13 @@
 body {
-  background: var(--lm-body);  
+  background: var(--lm-body);
   color: var(--lm-default);
   /* TEMPORARY FONT */
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-size: 15pt;
   margin: 0;
   width: 100%;
+  height: 100vh;
 }
 
 :root {
@@ -21,9 +23,9 @@ body {
   --dm-nav: #35515f;
   --dm-footer: #263140;
 
-    /* TEXT */
-    --lm-default: #333333;
-    --dm-default: #a6b7ba;
+  /* TEXT */
+  --lm-default: #333333;
+  --dm-default: #a6b7ba;
 }
 
 .grid-container {
@@ -33,7 +35,7 @@ body {
   gap: 0px 0px;
   grid-template-areas:
     "donateHeading donateHeading donateHeading donateHeading"
-    "donateTitle donateTitle donateTitle donateTitle"
+    "donateMain donateMain donateMain donateMain"
     "donateMain donateMain donateMain donateMain"
     "donateFooter donateFooter donateFooter donateFooter";
 }
@@ -41,6 +43,67 @@ body {
 .donateHeading {
   grid-area: donateHeading;
   background: var(--lm-header);
+}
+/* Donate Main  */
+.donateMain {
+  grid-area: donateMain;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "donate-form donate-form donate-form donate-buttons";
+  height: 86.25vh;
+}
+
+.donate-form{
+  grid-area: donate-form;
+  background-color: royalblue;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin: 0;
+  max-width: 75%;
+  padding-left: 100px;
+}
+
+.form-control{
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  position: relative;
+}
+.form-control label{
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.form-control input{
+  border: 3px solid black;
+  border-radius: 5px;
+  display: block;
+  font-family: inherit;
+  font-size: 14pt;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.form-control p{
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 10pt;
+}
+/* Donate Error CSS */
+.form-control.success input{
+  border-color: lawngreen;
+}
+.form-control.error input{
+  border-color: red;
+}
+.form-control.error p{
+  visibility: visible;
+  color: red;
+}
+.donate-buttons{
+  grid-area: donate-buttons;
 }
 
 .socialmedia {
@@ -59,10 +122,7 @@ body {
   grid-area: donateTitle;
 }
 
-.donateMain {
-  grid-area: donateForm;
- 
-}
+
 
 .donateFooter {
   grid-area: donateFooter;
