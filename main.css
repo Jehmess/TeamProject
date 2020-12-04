@@ -154,7 +154,7 @@ h3 {
   grid-area: headingImg;
   width: 100%; 
   height: 100%;
-  background: var(--lm-body);
+  background: var(--lm-body);  
 }
 
 .banner {
@@ -163,7 +163,10 @@ h3 {
   background: url(images/coralreef.jpeg); /* Stock Photo by Adobe Photo Stock  */
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;  
+  background-size: cover;   
+  border-top: 3px solid #333333;  
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all .5s;  
 }
 
 .darkMode{
@@ -185,6 +188,8 @@ h3 {
   gap: 5px;
   grid-template-areas: 
   "nav1 nav2 nav3 nav4";
+  border-top: 3px solid #333333;
+  border-bottom: 3px solid #333333;
   
   /* NAVTEXT(LM) */ 
   color: var(--lm-navtxt);
@@ -298,6 +303,7 @@ h3 {
   grid-area: footer;
   background: var(--lm-header);  
   padding-bottom: 10px;
+  border-top: 3px solid #333333;
 }
 
 .contact{  
