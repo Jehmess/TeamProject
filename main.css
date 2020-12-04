@@ -165,8 +165,7 @@ h3 {
   background-position: center;
   background-size: cover;   
   border-top: 3px solid #333333;  
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition: all .5s;  
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
 }
 
 .darkMode{
@@ -279,6 +278,17 @@ h3 {
   grid-area: articles; 
   text-align: justify;
   padding: 10px;
+}
+.icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-flow: row;
+  justify-content: space-evenly;
+}
+.icons img {
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .aboutUs{
