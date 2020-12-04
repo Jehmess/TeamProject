@@ -177,6 +177,18 @@ h3 {
   background-size: cover;
 }
 
+.textCenter {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--lm-navtxt);
+  text-transform: uppercase;
+  font-size: 120px;
+  font-family: 'Oswald', sans-serif;
+  text-shadow: 2px 2px #444444;
+}
+
 /* Navbar Section */
 .navBar {
   grid-area: navBar;
@@ -400,21 +412,22 @@ input[type=text], select, textarea {
 
 /* For mobile phones: */
 @media only screen and (max-width: 600px) {
-  body {
-      font-size: 12pt;      
+  body, .body2 {
+      font-size: 12pt;          
   }
-  .banner, .banner img {
+  .banner, .banner img, .navBar, .navBar2, img, form, .textCenter, .headingImg {
     display: none;
     visibility: hidden;
   }
 }
 
 /* For tablets: */
-@media only screen and (min-width: 600px) {
-  
-}
-
-/* For desktop: */
-@media only screen and (min-width: 768px) {
-  
+@media only screen and (min-width: 600px) and (max-width:768){
+  body, .body2 {
+    font-size: 12pt;
+  }
+  .banner, .banner img, img, form, .headingImg, .textCenter {
+    display: none;
+    visibility: hidden;
+  }  
 }
