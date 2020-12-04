@@ -57,9 +57,6 @@ h3 {
 }
 
 
-
-
-
 /* Main Grid Container */
 .grid-container {
   display: grid;
@@ -74,6 +71,7 @@ h3 {
     "footer footer footer footer";
   height: 200vh;
 }
+
 
 /* Top Level header */
 .topHead {
@@ -149,6 +147,22 @@ h3 {
   transition: 0.5s;
 }
 
+/* HEADER SOCIAL MEDIA */
+.topsocialmedia {
+  color: var(--lm-navtxt);
+  text-align: right;
+}
+.topsocialmedia img {
+  width: 30px;
+  height: 30px;  
+  padding: 5px;
+  padding-top: 10px;
+  margin-right: 5px;
+}
+.topsocialmedia img:hover {
+  opacity: 0.7;
+}
+
 
 /* Main Image Heading */
 .headingImg {
@@ -190,7 +204,8 @@ h3 {
   text-shadow: 2px 2px #444444;
 }
 
-/* Navbar Section */
+
+/* Navbar Section (LM) */
 .navBar {
   grid-area: navBar;
   background: var(--lm-nav);
@@ -214,6 +229,7 @@ h3 {
   text-shadow: 3px 3px #333333;
 }
 
+/* Navbar Section (DM) */
 .navBar2 {
   grid-area: navBar;
   background: var(--dm-nav);
@@ -234,6 +250,7 @@ h3 {
   -webkit-text-stroke: 2px #333333;
   text-shadow: 3px 3px #333333;
 }
+
 .navBar a, a:link {
   color: var(--lm-navtxt);  
 }
@@ -258,12 +275,14 @@ h3 {
 .nav3:hover {
   background-color: var(--lm-header);
 }
+
 .nav4{
     grid-area: nav4;
 }
 .nav4:hover {
   background-color: var(--lm-header);
 }
+
 
 /* Main Section */
 .main{  
@@ -343,7 +362,6 @@ h3 {
   width: 100%;  
 }
 
-
 .footer p, address, h3, .socialmedia {
   color: var(--lm-navtxt);
   margin-left: auto;
@@ -362,7 +380,7 @@ address {
   font-style: normal; 
 }
 
-/* SOCIAL MEDIA */
+/* Footer Social Media */
 .socialmedia {
   color: var(--lm-navtxt);
   text-align: center;
@@ -376,22 +394,7 @@ address {
   opacity: 0.7;
 }
 
-.topsocialmedia {
-  color: var(--lm-navtxt);
-  text-align: right;
-}
-.topsocialmedia img {
-  width: 30px;
-  height: 30px;  
-  padding: 5px;
-  padding-top: 10px;
-  margin-right: 5px;
-}
-.topsocialmedia img:hover {
-  opacity: 0.7;
-}
-
-
+/* Footer Form */
 form {  
   color: var(--lm-navtxt);
   text-align: right;
@@ -409,9 +412,10 @@ input[type=text], select, textarea {
   resize: none;
 }
 
+
 /* MEDIA QUERIES */ 
 
-/* For mobile phones: */
+/* For mobile phones: 
 @media only screen and (max-width: 600px) {
   body, .body2 {
       font-size: 12pt;          
@@ -420,9 +424,9 @@ input[type=text], select, textarea {
     display: none;
     visibility: hidden;
   }
-}
+}*/
 
-/* For tablets: */
+/* For tablets: 
 @media only screen and (min-width: 600px) and (max-width:768){
   body, .body2 {
     font-size: 12pt;
@@ -431,4 +435,4 @@ input[type=text], select, textarea {
     display: none;
     visibility: hidden;
   }  
-}
+}*/
