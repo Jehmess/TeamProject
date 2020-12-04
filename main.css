@@ -45,6 +45,10 @@ h2 {
   text-transform: uppercase;
   text-shadow: 1px 1px #d8d8d8;  
 }
+.h2-dm {
+  color: var(--dm-default);
+  text-shadow: 1px 1px #444444;
+}
 
 h3 {
   font-family: 'Oswald', sans-serif;
@@ -52,10 +56,7 @@ h3 {
   text-shadow: 1px 1px #444444;
 }
 
-.h3-dm {
-  color: var(--dm-default);
-  text-shadow: 1px 1px #444444;
-}
+
 
 
 

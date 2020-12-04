@@ -12,8 +12,8 @@ function deepSea(){
     let element5 = document.getElementById('navBar')
     element5.classList.toggle("navBar2");
     // TODO Only Grabs one ID
-    let element6 = document.getElementById('h3-dm')
-    element6.classList.toggle('h3-dm')
+    let element6 = document.getElementById('h2-dm')
+    element6.classList.toggle('h2-dm');
 };
 
 // TODO LOCAL STORAGE COOKIES
