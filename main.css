@@ -286,6 +286,9 @@ h3 {
   text-align: justify;
   padding: 10px;
 }
+.leftFloat img {
+  float: left;
+}
 
 .donate{
   grid-area: donate; 
