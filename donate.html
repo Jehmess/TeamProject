@@ -17,7 +17,11 @@
   <body>
     <div class="grid-container">
       <div class="donateHeading">
-        <div class="socialmedia">
+          
+        <input type="button" onclick="location.href='index.html';" class="homebutton" title="Go Back" value="home"> 
+        <input type="button" id="deepSea" class="deepSea" title="Dark Mode" onclick='deepSea();' value="go deep"> 
+
+        <div class="topsocialmedia">
           <a href="https://www.facebook.com/"
             ><img src="images/facebook.svg" alt="Facebook" title="Facebook"
           /></a>
@@ -33,12 +37,24 @@
       <div class="donateMain">
         <div class="donate-form">
           <form action="#" method="get" name="donateForm" id="donateForm">
-            <label for="name">Full Name</label><br>
-            <input type="text" name="fname" id="fname" /><span id="nameWarning" class="alert"></span><br />
-            <label for="address">address</label><br>
-            <input type="text" name="adresss" id="addresss" /><span id="addWarning" class="alert"></span><br />
-            <label for="number">Phone Number</label><br>
-            <input type="text" name="phoneNumber" id="phoneNum" /><span id="numWarning" class="alert"></span><br />
+            <fieldset>
+              <legend>Personal Information</legend>
+              
+              <label for="name">Full Name</label><br>
+              <input type="text" name="fname" id="fname" /><span id="nameWarning" class="alert"></span><br />
+              
+              <label for="address">address</label><br>
+              <input type="text" name="adresss" id="addresss" /><span id="addWarning" class="alert"></span><br />
+              
+              <label for="number">Phone Number</label><br>
+              <input type="text" name="phoneNumber" id="phoneNum" /><span id="numWarning" class="alert"></span><br />
+
+            </fieldset>
+
+
+
+
+
             <!-- Credit Cards -->
             
             <label for="creditcard">Credit Card Number</label><br>
@@ -89,16 +105,28 @@
       </div>
 
       <div class="donateFooter">
-        <div class="socialmedia">
-          <a href="https://www.facebook.com/"
-            ><img src="images/facebook.svg" alt="Facebook" title="Facebook"
-          /></a>
-          <a href="https://www.instagram.com/"
-            ><img src="images/instagram.svg" alt="Instagram" title="Instagram"
-          /></a>
-          <a href="https://twitter.com"
-            ><img src="images/twitter.svg" alt="Twitter" title="Twitter"
-          /></a>
+        <div class="contact">
+          <address>
+            <h3>
+              Save the Ocean
+            </h3>
+            123 Ocean Ave<br>
+            Unit 203<br>
+            Ottawa, ON<br>
+            K1K 1K1
+          </address>
+
+          <div class="socialmedia"> 
+            <h3>
+              Connect With Us   
+            </h3>
+            <p>
+              <email><a href="mailto:hello@savetheocean.com">hello@savetheocean.com</a></email>
+            </p>                 
+            <a href="https://www.facebook.com/"><img src="images/facebook.svg" alt="Facebook" title="Facebook"></a>
+            <a href="https://www.instagram.com/"><img src="images/instagram.svg" alt="Instagram" title="Instagram"></a>
+            <a href="https://twitter.com"><img src="images/twitter.svg" alt="Twitter" title="Twitter"></a>           
+          </div>     
         </div>
       </div>
     </div>

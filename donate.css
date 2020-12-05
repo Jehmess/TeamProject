@@ -1,32 +1,44 @@
-body {
+body{
   background: var(--lm-body);
-  color: var(--lm-default);
-  /* TEMpORARY FONT */
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-size: 15pt;
+  color: var(--lm-default) ;
+  font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+  font-size: 14pt;
   margin: 0;
   width: 100%;
-  height: 100vh;
+}
+.body2{
+  background: var(--dm-body);
+  color: var(--dm-default) ;
+  font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+  font-size: 14pt;
+  margin: 0;
+  width: 100%;
 }
 
 :root {
   /* LIGHT MODE BACKGROUNDS */
-  --lm-body: #ece9d4;
-  --lm-header: #44656c;
+  --lm-body: #ECE9D4;
+  --lm-header: #44656C;
   --lm-nav: #557379;
-  --lm-footer: #44656c;
+  --lm-footer: #44656C;  
 
   /* DARK MODE BACKGROUNDS */
   --dm-body: #121212;
   --dm-header: #263140;
-  --dm-nav: #35515f;
-  --dm-footer: #263140;
+  --dm-nav: #35515F;
+  --dm-footer: #263140;  
 
   /* TEXT */
   --lm-default: #333333;
-  --dm-default: #a6b7ba;
+  --lm-navtxt: #bbdbd1;  
+  --dm-default: #A6B7BA;
 }
+
+a, a:active, a:link {
+  color: var(--lm-navtxt);
+  text-decoration: none;  
+}
+
 
 .grid-container {
   display: grid;
@@ -44,6 +56,83 @@ body {
   grid-area: donateHeading;
   background: var(--lm-header);
 }
+
+/* DM Button */
+.deepSea {
+  display: inline-block;
+  background-color: var(--lm-navtxt);  
+  color: var(--lm-default);  
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;  
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.deepSea:active {
+  background-color: var(--lm-navtxt);
+  transform: translateY(2px);
+}
+.deepSea a, a:link {
+  color: var(--lm-default);   
+}
+.deepSea:hover {
+  background-color: var(--dm-header);
+  color: var(--dm-default); 
+  transition: 0.5s;
+}
+
+/* DONATE BUTTON */
+.homebutton {
+  display: inline-block;
+  background-color: var(--lm-navtxt);  
+  color: var(--lm-default);  
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;  
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.homebutton:active {
+  background-color: var(--lm-navtxt);
+  transform: translateY(2px);
+}
+.homebutton a, a:link {
+  color: var(--lm-default);   
+}
+.homebutton:hover {
+  background-color: #ACD7CC;
+  transition: 0.5s;
+}
+
+
+/* HEADER SOCIAL MEDIA */
+.topsocialmedia {
+  color: var(--lm-navtxt);
+  text-align: right;
+}
+.topsocialmedia img {
+  width: 30px;
+  height: 30px;  
+  padding: 5px;
+  padding-top: 10px;
+  margin-right: 5px;
+}
+.topsocialmedia img:hover {
+  opacity: 0.7;
+}
+
 /* Donate Main  */
 .donateMain {
   grid-area: donateMain;
@@ -63,40 +152,56 @@ body {
   grid-area: donate-buttons;
 }
 
-.socialmedia {
-  text-align: right;
-}
-
-.socialmedia img {
-  margin-top: 10px;
-  margin-right: 10px;
-  width: 25px;
-  height: 25px;
-  padding: 5px;
-}
-
 .donateTitle {
   grid-area: donateTitle;
 }
 
-
-
 .donateFooter {
   grid-area: donateFooter;
   background: var(--lm-header);
+  padding-bottom: 10px;
+  border-top: 3px solid #333333;
 }
 
-/* For mobile phones: */
-@media only screen and (max-width: 600px) {
-  body {
-    font-size: 12pt;
-  }
+.contact{  
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: 1.5fr ;
+  grid-template-areas:
+  "contact contact contact"  
+  ;
+  grid-area: contact;
+  width: 100%;  
 }
 
-/* For tablets: */
-@media only screen and (min-width: 600px) {
+.donateFooter p, address, h3, .socialmedia {
+  color: var(--lm-navtxt);
+  margin-left: auto;
+  margin-right: auto;  
 }
 
-/* For desktop: */
-@media only screen and (min-width: 768px) {
+.footer2 {
+  grid-area: footer;
+  background: var(--dm-header);
+  color: var(--dm-default);
+}
+
+address {
+  text-transform: uppercase;
+  text-align: center;
+  font-style: normal; 
+}
+
+/* Footer Social Media */
+.socialmedia {
+  color: var(--lm-navtxt);
+  text-align: center;
+}
+.socialmedia img {
+  width: 30px;
+  height: 30px;  
+  padding: 5px
+}
+.socialmedia img:hover {
+  opacity: 0.7;
 }
