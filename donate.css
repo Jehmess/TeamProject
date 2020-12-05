@@ -4,7 +4,7 @@ body{
   font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
   font-size: 14pt;
   margin: 0;
-  width: 100%;
+  width: 100%;  
 }
 .body2{
   background: var(--dm-body);
@@ -154,6 +154,22 @@ a, a:active, a:link {
 
 .donateTitle {
   grid-area: donateTitle;
+}
+
+form {
+  background-color: var(--lm-body);
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 50%;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+label {
+  display: inline-block;
+  width: 150px;
+  text-align: right;
 }
 
 .donateFooter {
