@@ -55,7 +55,10 @@ body {
   height: 86.25vh;
 }
 
-
+.alert{
+  color: red;
+  font-size: 12pt;
+}
 .donate-buttons{
   grid-area: donate-buttons;
 }
