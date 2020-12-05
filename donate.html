@@ -11,6 +11,7 @@
       integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-masker/1.2.0/vanilla-masker.min.js"></script>
     <title>Donations</title>
   </head>
   <body>
@@ -39,11 +40,12 @@
             <label for="number">Phone Number</label><br>
             <input type="text" name="phoneNumber" id="phoneNum" /><span id="numWarning" class="alert"></span><br />
             <!-- Credit Cards -->
+            
             <label for="creditcard">Credit Card Number</label><br>
             <input type="text" name="creditcard" id="cc" placeholder="Card Number">
             <input type="text" name="cvv" id="cvv" placeholder="xxx" style="width: 20px"><br>
 
-            <button type="submmit" value="submit">submit</button>
+            <button type="submmit" value="submit" onclick="cardnumber(document.donateForm.creditcard)">submit</button>
             <!-- <input type="submit" value="submit"> -->
           </form>
         </div>
@@ -65,6 +67,5 @@
       </div>
     </div>
     <script src="scripts.js"></script>
-    <script src="credit.js"></script>
   </body>
 </html>

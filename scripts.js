@@ -73,3 +73,18 @@ document.getElementById('phoneNum').addEventListener('blur', function(){
 
 
 document.donateForm.addEventListener('submit', validateForm);
+
+// CREDIT CARD
+function cardnumber(inputtxt)
+{
+  var cardno = /^(?:4[0-9]{12}(?:[0-9]{3})?)$/;
+  if(inputtxt.value.match(cardno))
+        {
+      return true;
+        }
+      else
+        {
+        alert("Not a valid Visa credit card number!");
+        return false;
+        }
+}
