@@ -34,8 +34,9 @@ body{
   --dm-default: #A6B7BA;
 }
 
-a {
-  text-decoration: none;
+a, a:active, a:link {
+  color: var(--lm-navtxt);
+  text-decoration: none;  
 }
 
 h2 {

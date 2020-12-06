@@ -17,7 +17,11 @@
   <body>
     <div class="grid-container">
       <div class="donateHeading">
-        <div class="socialmedia">
+          
+        <input type="button" onclick="location.href='index.html';" class="homebutton" title="Go Back" value="home"> 
+        <input type="button" id="deepSea" class="deepSea" title="Dark Mode" onclick='deepSea();' value="go deep"> 
+
+        <div class="topsocialmedia">
           <a href="https://www.facebook.com/"
             ><img src="images/facebook.svg" alt="Facebook" title="Facebook"
           /></a>
@@ -33,19 +37,108 @@
       <div class="donateMain">
         <div class="donate-form">
           <form action="#" method="get" name="donateForm" id="donateForm">
-            <label for="name">Full Name</label><br>
-            <input type="text" name="fname" id="fname" /><span id="nameWarning" class="alert"></span><br />
-            <label for="address">address</label><br>
-            <input type="text" name="adresss" id="addresss" /><span id="addWarning" class="alert"></span><br />
-            <label for="number">Phone Number</label><br>
-            <input type="text" name="phoneNumber" id="phoneNum" /><span id="numWarning" class="alert"></span><br />
-            <!-- Credit Cards -->
+            <fieldset>
+              <legend>Personal Information</legend>
+              
+              <p>
+                <label for="name">First Name</label>
+                <input type="text" name="fname" id="fname" placeholder="First Name">
+                <span id="nameWarning" class="alert"></span>
+              </p>
+
+              <p>
+                <label for="lname">Last Name</label>
+                <input type="text" name="lname" id="lname" placeholder="Last Name">
+                <span id="lnameWarning" class="alert"></span>
+              </p>
+
+              <p>
+                <label for="birth">Date of Birth:</label>
+                <input type="date" id="birth" name="birth">
+              </p>
+
+            </fieldset>
+
+            <fieldset>
+              <legend>Contact Information</legend>               
+
+              <p>
+                <label for="address">Address</label>
+                <input type="text" name="adresss" id="addresss" />
+                <span id="addWarning" class="alert"></span>
+              </p>
+
+              <p>
+                <label for="city">City</label>
+                <input type="text" name="city" id="city">
+              </p>
+
+              <p>
+                <label for="province">Province</label>
+                <select name="province" id="province">
+                  <option value="">Select Province</option>
+                  <option value="AB">Alberta</option>
+                  <option value="BC">British Columbia</option>
+                  <option value="MB">Manitoba</option>
+                  <option value="NB">New Brunswick</option>
+                  <option value="NL">Newfoundland and Labrador</option>
+                  <option value="NS">Nova Scotia</option>
+                  <option value="ON">Ontario</option>
+                  <option value="PE">Prince Edward Island</option>
+                  <option value="QC">Quebec</option>
+                  <option value="SK">Saskatchewan</option>
+                  <option value="NT">Northwest Territories</option>
+                  <option value="NU">Nunavut</option>
+                  <option value="YT">Yukon</option>
+              </select>
+              </p>
+
+              
+               <p>
+                <label for="country">Country:</label>
+                <select name="country" id="country">
+                  <option value="">Select Country</option>
+                  <option value="CA">Canada</option>
+                  <option value="US">United States</option>
+                  <option value="OTH">Other</option>
+                </select>
+              </p>        
+              
+              <p>
+                <label for="number">Phone Number</label>
+                <input type="text" name="phoneNumber" id="phoneNum" placeholder="123-456-7890">
+                <span id="numWarning" class="alert"></span>
+                <select name="phone" id="phone">
+                  <option value="">Mobile</option>
+                  <option value="">Home</option>
+              </select>
+              </p>
+              
+              <p>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="user_email" placeholder="name@email.com">
+              </p>
+
+            </fieldset>
+
+            <fieldset>
+              <legend>Payment Information</legend>
+
+               <!-- Credit Cards -->
             
-            <label for="creditcard">Credit Card Number</label><br>
-            <input type="text" name="creditcard" id="cc" placeholder="Card Number">
-            <input type="text" name="cvv" id="cvv" placeholder="xxx" style="width: 20px"><br>
+            <label for="creditcard">Credit Card Number</label>
+            <input type="text" name="creditcard" id="cc" placeholder="Credit Card Number">
+            <input type="text" name="cvv" id="cvv" placeholder="xxx" style="width: 20px">
 
             <button type="submmit" value="submit" onclick="cardnumber(document.donateForm.creditcard)">submit</button>
+
+            </fieldset>
+
+
+
+
+
+           
             <!-- <input type="submit" value="submit"> -->
             <div id="smart-button-container">
               <div style="text-align: center;">
@@ -89,16 +182,30 @@
       </div>
 
       <div class="donateFooter">
-        <div class="socialmedia">
-          <a href="https://www.facebook.com/"
-            ><img src="images/facebook.svg" alt="Facebook" title="Facebook"
-          /></a>
-          <a href="https://www.instagram.com/"
-            ><img src="images/instagram.svg" alt="Instagram" title="Instagram"
-          /></a>
-          <a href="https://twitter.com"
-            ><img src="images/twitter.svg" alt="Twitter" title="Twitter"
-          /></a>
+        <div class="contact">
+          <address>
+            <h3>
+              Save the Ocean
+            </h3>
+            123 Ocean Ave<br>
+            Unit 203<br>
+            Ottawa, ON<br>
+            K1K 1K1
+          </address>
+
+          <div class="socialmedia"> 
+            <h3>
+              Connect With Us   
+            </h3>
+            <p>
+              <a href="mailto:hello@savetheocean.com">hello@savetheocean.com</a>
+            </p>                 
+            <a href="https://www.facebook.com/"><img src="images/facebook.svg" alt="Facebook" title="Facebook"></a>
+            <a href="https://www.instagram.com/"><img src="images/instagram.svg" alt="Instagram" title="Instagram"></a>
+            <a href="https://twitter.com"><img src="images/twitter.svg" alt="Twitter" title="Twitter"></a>           
+          </div>       
+        
+
         </div>
       </div>
     </div>
