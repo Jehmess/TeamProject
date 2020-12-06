@@ -12,9 +12,18 @@ function deepSea(){
     let element5 = document.getElementById('navBar')
     element5.classList.toggle("navBar2");
     // TODO Only Grabs one ID
-    let element6 = document.getElementById('h2-dm')
-    element6.classList.toggle('h2-dm');
+    if(document.body.classList.contains('body2')){
+        localStorage.setItem('websiteTheme', "darkmode");
+    } else{
+        localStorage.setItem('websiteTheme', 'default');
+    }
 };
+function themeFinder(){
+    var theme = localStorage.getItem('websiteTheme');
+    if(theme != null){
+        document.body.classList.remove('default', '')
+    }
+}
 
 // TODO LOCAL STORAGE COOKIES
 // if dark-mode = true
