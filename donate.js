@@ -62,6 +62,7 @@ function validateForm(e){
 
 function resetForm(){
     document.getElementById('donateForm').reset();
+    document.getElementById('displayer').style.visibility = 'hidden';
 }
 
 window.onload=function(){
@@ -120,7 +121,7 @@ window.onload=function(){
         }
     });
 
-    document.donateForm.addEventListener('reset', resetForm)
+    document.donateForm.addEventListener('reset', resetForm);
 
 
 
