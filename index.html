@@ -1,181 +1,263 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- CSS LINK -->
-    <link rel="stylesheet" href="main.css">  
+    <link rel="stylesheet" href="main.css" />
 
     <!--FONTS-->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">      
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Script JS Page -->
-    <script src="scripts.js"></script>    
     
+
     <!-- Unique Browser Icon -->
-    <link rel="icon" type="image/png" href="images/favicon1.png">   
-    
+    <link rel="icon" type="image/png" href="images/favicon1.png" />
+
     <title>Save The Ocean</title>
   </head>
 
-  <body id='body'>  
+  <body id="body">
+    <div class="grid-container">
+      <div id="topHead" class="topHead">
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+          </label>
+          <em>Enable Dark Mode!</em>
+        </div>
 
-    <div class="grid-container">   
-        <div id='topHead' class="topHead">  
-        <input type="button" id="deepSea" class="deepSea" title="Dark Mode" onclick='deepSea();' value="go deep">      
-        <input type="button" onclick="location.href='donate.html';" class="donatebutton" title="Donate Today!" value="Donate">  
-        <div class="topsocialmedia">                           
-          <a href="https://www.facebook.com/"><img src="images/facebook.svg" alt="Facebook" title="Facebook"></a>
-          <a href="https://www.instagram.com/"><img src="images/instagram.svg" alt="Instagram" title="Instagram"></a>
-          <a href="https://twitter.com"><img src="images/twitter.svg" alt="Twitter" title="Twitter"></a>           
-        </div>                                        
+        <input
+          type="button"
+          onclick="location.href='donate.html';"
+          class="donatebutton"
+          title="Donate Today!"
+          value="Donate"
+        />
+        <div class="topsocialmedia">
+          <a href="https://www.facebook.com/"
+            ><img src="images/facebook.svg" alt="Facebook" title="Facebook"
+          /></a>
+          <a href="https://www.instagram.com/"
+            ><img src="images/instagram.svg" alt="Instagram" title="Instagram"
+          /></a>
+          <a href="https://twitter.com"
+            ><img src="images/twitter.svg" alt="Twitter" title="Twitter"
+          /></a>
+        </div>
       </div>
-      
-      <div class="headingImg">        
-          <div id="banner" class='banner'>
-            <img src="images/LightModeBanner.png" alt="Coral Reef"> <!-- Stock Photo by Adobe Photo Stock -->           
-          </div>                        
+
+      <div class="headingImg">
+        <div id="banner" class="banner">
+          <img src="images/LightModeBanner.png" alt="Coral Reef" />
+          <!-- Stock Photo by Adobe Photo Stock -->
+        </div>
       </div>
 
       <div id="navBar" class="navBar">
-          <div class="nav1">
-            <p><a href="#news">News</a></p>
-          </div>
-          <div class="nav2">
-            <p><a href="#aboutUs">About</a></p>
-          </div>
-          <div class="nav3">
-            <p><a href="#contactForm">Contact</a></p>
-          </div>
-          <div class="nav4">
-            <p><a href="donate.html">Donate</a></p>
-          </div>
-      </div>     
-      
-      <div class="main">      
+        <div class="nav1">
+          <p><a href="#news">News</a></p>
+        </div>
+        <div class="nav2">
+          <p><a href="#aboutUs">About</a></p>
+        </div>
+        <div class="nav3">
+          <p><a href="#contactForm">Contact</a></p>
+        </div>
+        <div class="nav4">
+          <p><a href="donate.html">Donate</a></p>
+        </div>
+      </div>
 
+      <div class="main">
         <div class="overview">
-          <h2 class="dark-h2">
-            Overview            
-          </h2>
+          <h2 class="dark-h2">Overview</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac congue nibh. Duis lorem ipsum, pellentesque eget sem vitae, venenatis lobortis nisi. 
-            Etiam dignissim quis arcu sed sollicitudin. Praesent lacinia neque velit, quis luctus odio tempor sit amet. Nulla ultrices, orci non tincidunt sodales, 
-            ipsum dolor auctor sem, at convallis massa nulla eu ipsum. Nulla convallis tortor et nibh vehicula tincidunt. Nullam hendrerit porttitor tincidunt. 
-            Curabitur ultrices porta volutpat. Morbi magna urna, consequat et lectus vel, pulvinar mollis magna. Nunc in ipsum enim. Proin ac nunc in libero tristique congue. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
+            congue nibh. Duis lorem ipsum, pellentesque eget sem vitae,
+            venenatis lobortis nisi. Etiam dignissim quis arcu sed sollicitudin.
+            Praesent lacinia neque velit, quis luctus odio tempor sit amet.
+            Nulla ultrices, orci non tincidunt sodales, ipsum dolor auctor sem,
+            at convallis massa nulla eu ipsum. Nulla convallis tortor et nibh
+            vehicula tincidunt. Nullam hendrerit porttitor tincidunt. Curabitur
+            ultrices porta volutpat. Morbi magna urna, consequat et lectus vel,
+            pulvinar mollis magna. Nunc in ipsum enim. Proin ac nunc in libero
+            tristique congue.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac congue nibh. Duis lorem ipsum, pellentesque eget sem vitae, venenatis lobortis nisi. 
-            Etiam dignissim quis arcu sed sollicitudin. Praesent lacinia neque velit, quis luctus odio tempor sit amet. Nulla ultrices, orci non tincidunt sodales, 
-            ipsum dolor auctor sem, at convallis massa nulla eu ipsum. Nulla convallis tortor et nibh vehicula tincidunt. Nullam hendrerit porttitor tincidunt. 
-            Curabitur ultrices porta volutpat. Morbi magna urna, consequat et lectus vel, pulvinar mollis magna. Nunc in ipsum enim. Proin ac nunc in libero tristique congue. 
-          </p>         
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
+            congue nibh. Duis lorem ipsum, pellentesque eget sem vitae,
+            venenatis lobortis nisi. Etiam dignissim quis arcu sed sollicitudin.
+            Praesent lacinia neque velit, quis luctus odio tempor sit amet.
+            Nulla ultrices, orci non tincidunt sodales, ipsum dolor auctor sem,
+            at convallis massa nulla eu ipsum. Nulla convallis tortor et nibh
+            vehicula tincidunt. Nullam hendrerit porttitor tincidunt. Curabitur
+            ultrices porta volutpat. Morbi magna urna, consequat et lectus vel,
+            pulvinar mollis magna. Nunc in ipsum enim. Proin ac nunc in libero
+            tristique congue.
+          </p>
         </div>
 
-        <div class="articles">          
+        <div class="articles">
           <div class="icons">
-            <img src="images/Icon1.png" alt="an underwater scene"><img src="images/Icon3.png" alt="dolphins underwater"><img src="images/Icon4.png" alt="stingrays underwater">            
+            <img src="images/Icon1.png" alt="an underwater scene" /><img
+              src="images/Icon3.png"
+              alt="dolphins underwater"
+            /><img src="images/Icon4.png" alt="stingrays underwater" />
           </div>
-          <h2 class="dark-h2">
-            Ocean Facts            
-          </h2>
+          <h2 class="dark-h2">Ocean Facts</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac congue nibh. Duis lorem ipsum, pellentesque eget sem vitae, venenatis lobortis nisi. 
-            Etiam dignissim quis arcu sed sollicitudin. Praesent lacinia neque velit, quis luctus odio tempor sit amet. Nulla ultrices, orci non tincidunt sodales, 
-            ipsum dolor auctor sem, at convallis massa nulla eu ipsum. Nulla convallis tortor et nibh vehicula tincidunt. Nullam hendrerit porttitor tincidunt. 
-            Curabitur ultrices porta volutpat. Morbi magna urna, consequat et lectus vel, pulvinar mollis magna. Nunc in ipsum enim. Proin ac nunc in libero tristique congue. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
+            congue nibh. Duis lorem ipsum, pellentesque eget sem vitae,
+            venenatis lobortis nisi. Etiam dignissim quis arcu sed sollicitudin.
+            Praesent lacinia neque velit, quis luctus odio tempor sit amet.
+            Nulla ultrices, orci non tincidunt sodales, ipsum dolor auctor sem,
+            at convallis massa nulla eu ipsum. Nulla convallis tortor et nibh
+            vehicula tincidunt. Nullam hendrerit porttitor tincidunt. Curabitur
+            ultrices porta volutpat. Morbi magna urna, consequat et lectus vel,
+            pulvinar mollis magna. Nunc in ipsum enim. Proin ac nunc in libero
+            tristique congue.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac congue nibh. Duis lorem ipsum, pellentesque eget sem vitae, venenatis lobortis nisi. 
-            Etiam dignissim quis arcu sed sollicitudin. Praesent lacinia neque velit, quis luctus odio tempor sit amet. Nulla ultrices, orci non tincidunt sodales, 
-            ipsum dolor auctor sem, at convallis massa nulla eu ipsum. Nulla convallis tortor et nibh vehicula tincidunt. Nullam hendrerit porttitor tincidunt. 
-            Curabitur ultrices porta volutpat. Morbi magna urna, consequat et lectus vel, pulvinar mollis magna. Nunc in ipsum enim. Proin ac nunc in libero tristique congue. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
+            congue nibh. Duis lorem ipsum, pellentesque eget sem vitae,
+            venenatis lobortis nisi. Etiam dignissim quis arcu sed sollicitudin.
+            Praesent lacinia neque velit, quis luctus odio tempor sit amet.
+            Nulla ultrices, orci non tincidunt sodales, ipsum dolor auctor sem,
+            at convallis massa nulla eu ipsum. Nulla convallis tortor et nibh
+            vehicula tincidunt. Nullam hendrerit porttitor tincidunt. Curabitur
+            ultrices porta volutpat. Morbi magna urna, consequat et lectus vel,
+            pulvinar mollis magna. Nunc in ipsum enim. Proin ac nunc in libero
+            tristique congue.
           </p>
         </div>
 
         <div class="aboutUs" id="aboutUs">
-          <h2 class="dark-h2">
-            About Us            
-          </h2>          
-            <p>              
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac congue nibh. Duis lorem ipsum, pellentesque eget sem vitae, venenatis lobortis nisi. 
-              Etiam dignissim quis arcu sed sollicitudin. Praesent lacinia neque velit, quis luctus odio tempor sit amet. Nulla ultrices, orci non tincidunt sodales, 
-              ipsum dolor auctor sem, at convallis massa nulla eu ipsum. Nulla convallis tortor et nibh vehicula tincidunt. Nullam hendrerit porttitor tincidunt. 
-              Curabitur ultrices porta volutpat. Morbi magna urna, consequat et lectus vel, pulvinar mollis magna. Nunc in ipsum enim. Proin ac nunc in libero tristique congue. 
-            </p>   
-            <div class="icons">
-              <img src="images/Icon2.png"><img src="images/Icon2.png"><img src="images/Icon2.png">
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac congue nibh. Duis lorem ipsum, pellentesque eget sem vitae, venenatis lobortis nisi. 
-              Etiam dignissim quis arcu sed sollicitudin. Praesent lacinia neque velit, quis luctus odio tempor sit amet. Nulla ultrices, orci non tincidunt sodales, 
-              ipsum dolor auctor sem, at convallis massa nulla eu ipsum. Nulla convallis tortor et nibh vehicula tincidunt. Nullam hendrerit porttitor tincidunt. 
-              Curabitur ultrices porta volutpat. Morbi magna urna, consequat et lectus vel, pulvinar mollis magna. Nunc in ipsum enim. Proin ac nunc in libero tristique congue. 
-            </p>    
+          <h2 class="dark-h2">About Us</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
+            congue nibh. Duis lorem ipsum, pellentesque eget sem vitae,
+            venenatis lobortis nisi. Etiam dignissim quis arcu sed sollicitudin.
+            Praesent lacinia neque velit, quis luctus odio tempor sit amet.
+            Nulla ultrices, orci non tincidunt sodales, ipsum dolor auctor sem,
+            at convallis massa nulla eu ipsum. Nulla convallis tortor et nibh
+            vehicula tincidunt. Nullam hendrerit porttitor tincidunt. Curabitur
+            ultrices porta volutpat. Morbi magna urna, consequat et lectus vel,
+            pulvinar mollis magna. Nunc in ipsum enim. Proin ac nunc in libero
+            tristique congue.
+          </p>
+          <div class="icons">
+            <img src="images/Icon2.png" /><img src="images/Icon2.png" /><img
+              src="images/Icon2.png"
+            />
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
+            congue nibh. Duis lorem ipsum, pellentesque eget sem vitae,
+            venenatis lobortis nisi. Etiam dignissim quis arcu sed sollicitudin.
+            Praesent lacinia neque velit, quis luctus odio tempor sit amet.
+            Nulla ultrices, orci non tincidunt sodales, ipsum dolor auctor sem,
+            at convallis massa nulla eu ipsum. Nulla convallis tortor et nibh
+            vehicula tincidunt. Nullam hendrerit porttitor tincidunt. Curabitur
+            ultrices porta volutpat. Morbi magna urna, consequat et lectus vel,
+            pulvinar mollis magna. Nunc in ipsum enim. Proin ac nunc in libero
+            tristique congue.
+          </p>
         </div>
 
-        <div class="filler"></div><!--DO NOT USE-->
+        <div class="filler"></div>
+        <!--DO NOT USE-->
 
         <div class="news" id="news">
-          <h2 class="dark-h2">
-            News   
-          </h2>
+          <h2 class="dark-h2">News</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac congue nibh. Duis lorem ipsum, pellentesque eget sem vitae, venenatis lobortis nisi. 
-            Etiam dignissim quis arcu sed sollicitudin. Praesent lacinia neque velit, quis luctus odio tempor sit amet. Nulla ultrices, orci non tincidunt sodales, 
-            ipsum dolor auctor sem, at convallis massa nulla eu ipsum. Nulla convallis tortor et nibh vehicula tincidunt. Nullam hendrerit porttitor tincidunt. 
-            Curabitur ultrices porta volutpat. Morbi magna urna, consequat et lectus vel, pulvinar mollis magna. Nunc in ipsum enim. Proin ac nunc in libero tristique congue. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
+            congue nibh. Duis lorem ipsum, pellentesque eget sem vitae,
+            venenatis lobortis nisi. Etiam dignissim quis arcu sed sollicitudin.
+            Praesent lacinia neque velit, quis luctus odio tempor sit amet.
+            Nulla ultrices, orci non tincidunt sodales, ipsum dolor auctor sem,
+            at convallis massa nulla eu ipsum. Nulla convallis tortor et nibh
+            vehicula tincidunt. Nullam hendrerit porttitor tincidunt. Curabitur
+            ultrices porta volutpat. Morbi magna urna, consequat et lectus vel,
+            pulvinar mollis magna. Nunc in ipsum enim. Proin ac nunc in libero
+            tristique congue.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac congue nibh. Duis lorem ipsum, pellentesque eget sem vitae, venenatis lobortis nisi. 
-            Etiam dignissim quis arcu sed sollicitudin. Praesent lacinia neque velit, quis luctus odio tempor sit amet. Nulla ultrices, orci non tincidunt sodales, 
-            ipsum dolor auctor sem, at convallis massa nulla eu ipsum. Nulla convallis tortor et nibh vehicula tincidunt. Nullam hendrerit porttitor tincidunt. 
-            Curabitur ultrices porta volutpat. Morbi magna urna, consequat et lectus vel, pulvinar mollis magna. Nunc in ipsum enim. Proin ac nunc in libero tristique congue. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
+            congue nibh. Duis lorem ipsum, pellentesque eget sem vitae,
+            venenatis lobortis nisi. Etiam dignissim quis arcu sed sollicitudin.
+            Praesent lacinia neque velit, quis luctus odio tempor sit amet.
+            Nulla ultrices, orci non tincidunt sodales, ipsum dolor auctor sem,
+            at convallis massa nulla eu ipsum. Nulla convallis tortor et nibh
+            vehicula tincidunt. Nullam hendrerit porttitor tincidunt. Curabitur
+            ultrices porta volutpat. Morbi magna urna, consequat et lectus vel,
+            pulvinar mollis magna. Nunc in ipsum enim. Proin ac nunc in libero
+            tristique congue.
           </p>
         </div>
       </div>
-      <div id='footer' class="footer">
+      <div id="footer" class="footer">
         <div class="contact">
           <address>
-            <h3>
-              Save the Ocean
-            </h3>
-            123 Ocean Ave<br>
-            Unit 203<br>
-            Ottawa, ON<br>
+            <h3>Save the Ocean</h3>
+            123 Ocean Ave<br />
+            Unit 203<br />
+            Ottawa, ON<br />
             K1K 1K1
           </address>
 
-          <div class="socialmedia"> 
-            <h3>
-              Connect With Us   
-            </h3>
+          <div class="socialmedia">
+            <h3>Connect With Us</h3>
             <p>
               <a href="mailto:hello@savetheocean.com">hello@savetheocean.com</a>
-            </p>                 
-            <a href="https://www.facebook.com/"><img src="images/facebook.svg" alt="Facebook" title="Facebook"></a>
-            <a href="https://www.instagram.com/"><img src="images/instagram.svg" alt="Instagram" title="Instagram"></a>
-            <a href="https://twitter.com"><img src="images/twitter.svg" alt="Twitter" title="Twitter"></a>           
-          </div> 
-        
-          <form action="" class="contactForm" id="contactForm" method="GET">         
-                        
-            <input type="email" id="email" name="email" placeholder="Your email address..." style="width:49%">
-            <br>            
-            <textarea id="message" name="message" placeholder="Your message..."></textarea>
-            <br>
-            <label for="newletter">Join Our Newsletter</label>
-            <input type="checkbox" id="newsletter" name="newsletter">
-            <br>
-            <input type="submit" value="Submit">         
-           
-          </form>
+            </p>
+            <a href="https://www.facebook.com/"
+              ><img src="images/facebook.svg" alt="Facebook" title="Facebook"
+            /></a>
+            <a href="https://www.instagram.com/"
+              ><img
+                src="images/instagram.svg"
+                alt="Instagram"
+                title="Instagram"
+            /></a>
+            <a href="https://twitter.com"
+              ><img src="images/twitter.svg" alt="Twitter" title="Twitter"
+            /></a>
+          </div>
 
+          <form action="" class="contactForm" id="contactForm" method="GET">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email address..."
+              style="width: 49%"
+            />
+            <br />
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Your message..."
+            ></textarea>
+            <br />
+            <label for="newletter">Join Our Newsletter</label>
+            <input type="checkbox" id="newsletter" name="newsletter" />
+            <br />
+            <input type="submit" value="Submit" />
+          </form>
         </div>
       </div>
     </div>
+    <script src="/scripts.js"></script>
   </body>
 </html>
