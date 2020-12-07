@@ -34,12 +34,6 @@ body{
   --dm-default: #A6B7BA;
 }
 
-a, a:active, a:link {
-  color: var(--lm-navtxt);
-  text-decoration: none;  
-}
-
-
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -57,6 +51,7 @@ a, a:active, a:link {
   grid-area: donateHeading;
   background: var(--lm-header);
   text-align: right;
+  border-bottom: 3px solid var(--lm-default);
 }
 
 /* DM Button */
@@ -175,6 +170,40 @@ label {
   text-align: right;
 }
 
+.submitBtn {
+  background-color: var(--lm-nav);
+  border: none;
+  border-radius: 8px;
+  color: var(--lm-body);
+  padding: 16px 32px;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;    
+}
+.submitBtn:hover {
+  background-color: var(--lm-header);
+}
+.submitBtn:active {  
+  transform: translateY(2px);
+}
+
+input[type=reset] {
+  background-color: var(--lm-nav);
+  border: none;
+  border-radius: 8px;
+  color: var(--lm-body);
+  padding: 16px 32px;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;    
+}
+
 .donateFooter {
   grid-area: donateFooter;
   background: var(--lm-header);
@@ -202,10 +231,10 @@ label {
 
 .contact{  
   display: grid;
-  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-columns: 2fr 2fr;
   grid-template-rows: 1.5fr ;
   grid-template-areas:
-  "contact contact contact"  
+  "contact contact"  
   ;
   grid-area: contact;
   width: 100%;  
@@ -227,6 +256,12 @@ address {
   text-transform: uppercase;
   text-align: center;
   font-style: normal; 
+}
+
+.email a { 
+  color: var(--lm-navtxt);
+  text-transform: uppercase;
+  text-decoration: none;  
 }
 
 /* Footer Social Media */

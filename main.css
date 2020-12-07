@@ -24,12 +24,6 @@ body {
   --lm-footer: #263140;
   --lm-default: #a6b7ba;
 }
-a,
-a:active,
-a:link {
-  color: var(--lm-navtxt);
-  text-decoration: none;
-}
 
 .dark-h2 {
   font-family: "Oswald", sans-serif;
@@ -66,6 +60,7 @@ h3 {
   background: var(--lm-header);
   color: var(--lm-navtxt);
   text-align: right;
+  border-bottom: 3px solid var(--lm-default);
 }
 
 /* DM Button */
@@ -131,9 +126,11 @@ a:link {
 /* switch */
 .theme-switch-wrapper {
   display: flex;
-  align-items: center;
+  align-items: center;  
+  margin-top: 10px; 
+  margin-left: 10px;
 }
-em {
+em {  
   margin-left: 10px;
   font-size: 1rem;
 }
@@ -161,7 +158,7 @@ em {
 }
 
 .slider:before {
-  background-color: #fff;
+  background-color: #263140;
   bottom: 4px;
   content: "";
   height: 26px;
@@ -172,7 +169,7 @@ em {
 }
 
 input:checked + .slider {
-  background-color: #66bb6a;
+  background-color: #121212;
 }
 
 input:checked + .slider:before {
@@ -211,6 +208,7 @@ input:checked + .slider:before {
 
 .banner {
   position: relative;
+  text-align: center;
 }
 
 .banner img {
@@ -219,6 +217,19 @@ input:checked + .slider:before {
   height: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+.textCenter {
+  position: absolute;
+  color: var(--lm-navtxt);
+  font-family: 'Oswald', sans-serif;
+  text-shadow: 2px 2px var(--lm-default);
+  text-transform: uppercase;
+  font-size: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 
 /* Navbar Section (LM) */
 .navBar {
@@ -229,6 +240,7 @@ input:checked + .slider:before {
   grid-template-rows: 1fr;
   gap: 5px;
   grid-template-areas: "nav1 nav2 nav3 nav4";
+  border-bottom: 3px solid var(--lm-default);
 
   /* NAVTEXT(LM) */
   color: var(--lm-navtxt);
@@ -241,9 +253,10 @@ input:checked + .slider:before {
   text-shadow: 3px 3px #333333;
 }
 
-.navBar a,
-a:link {
+.navBar a {
   color: var(--lm-navtxt);
+  text-decoration: none;
+  -webkit-text-stroke: 1px var(--lm-default);
 }
 
 .nav1 {
@@ -333,7 +346,7 @@ a:link {
   grid-area: footer;
   background: var(--lm-header);
   padding-bottom: 10px;
-  border-top: 3px solid #333333;
+  border-top: 3px solid var(--lm-default);
 }
 
 .contact {
@@ -358,6 +371,12 @@ address {
   text-transform: uppercase;
   text-align: center;
   font-style: normal;
+}
+
+.email a {
+  color: var(--lm-navtxt);
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 /* Footer Social Media */
@@ -396,24 +415,25 @@ textarea {
 
 /* MEDIA QUERIES */
 
-/* For mobile phones: 
+/* For mobile phones: */
 @media only screen and (max-width: 600px) {
-  body, .body2 {
+  body {
       font-size: 12pt;          
   }
-  .banner, .banner img, .navBar, .navBar2, img, form, .textCenter, .headingImg {
-    display: none;
-    visibility: hidden;
+
+  .textCenter {
+    font-size: 30px;
   }
-}*/
+}
+
 
 /* For tablets: 
 @media only screen and (min-width: 600px) and (max-width:768){
-  body, .body2 {
+  body {
     font-size: 12pt;
   }
-  .banner, .banner img, img, form, .headingImg, .textCenter {
-    display: none;
-    visibility: hidden;
+
+  .textCenter {
+    font-size: 30px;
   }  
-}*/
+} */
