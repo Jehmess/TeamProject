@@ -39,7 +39,7 @@ a, a:active, a:link {
   text-decoration: none;  
 }
 
-h2 {
+.dark-h2 {
   font-family: 'Oswald', sans-serif;
   color: #444444;
   text-align: center;
@@ -49,6 +49,9 @@ h2 {
 .h2-dm {
   color: var(--dm-default);
   text-shadow: 1px 1px #444444;
+  font-family: 'Oswald', sans-serif;
+  color: #444444;
+  text-align: center;
 }
 
 h3 {
