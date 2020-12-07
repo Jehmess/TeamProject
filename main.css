@@ -174,12 +174,16 @@ h3 {
   background: var(--lm-body);    
 }
 
+.banner {
+  position: relative;
+}
+
 .banner img {
-  width: 100%;
+  display: block;
+  width: 100%;  
   height: auto;  
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 
 
 
@@ -192,9 +196,7 @@ h3 {
   grid-template-rows: 1fr;
   gap: 5px;
   grid-template-areas: 
-  "nav1 nav2 nav3 nav4";
-  border-top: 3px solid #333333;
-  border-bottom: 3px solid #333333;
+  "nav1 nav2 nav3 nav4";  
   
   /* NAVTEXT(LM) */ 
   color: var(--lm-navtxt);
@@ -270,7 +272,7 @@ h3 {
   grid-template-areas:
   "overview overview overview"
   "articles filler aboutUs"
-  "donate donate donate"
+  "news news news"
   ;
   grid-area: main;
   width: 80%;  
@@ -306,12 +308,9 @@ h3 {
   text-align: justify;
   padding: 10px;
 }
-.leftFloat img {
-  float: left;
-}
 
-.donate{
-  grid-area: donate; 
+.news{
+  grid-area: news; 
   text-align: justify;
   padding: 10px;
 }
