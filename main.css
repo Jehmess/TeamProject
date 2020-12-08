@@ -464,7 +464,13 @@ textarea {
   }
 
   .navBar {
-    font-size: 10pt;
+    font-size: 10pt;    
+  }
+
+  .navBar a {
+    color: var(--lm-navtxt);
+    text-decoration: none;
+    -webkit-text-stroke: 0px;
   }
 
   .news, .aboutUs, .overview, .articles {
@@ -472,8 +478,8 @@ textarea {
   }
 
   .icons img {
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
   }
 
   .contact {
