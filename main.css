@@ -22,7 +22,7 @@ body {
   --lm-header: #263140;
   --lm-nav: #35515f;
   --lm-footer: #263140;
-  --lm-default: #a6b7ba;
+  --lm-default: #a6b7ba;  
 }
 
 .dark-h2 {
@@ -126,12 +126,14 @@ a:link {
 /* switch */
 .theme-switch-wrapper {
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;  
   margin-top: 10px; 
-  margin-left: 10px;
+  margin-right: 10px;  
 }
 em {  
   margin-left: 10px;
+  padding: 5px;
   font-size: 1rem;
 }
 
@@ -199,6 +201,29 @@ input:checked + .slider:before {
 .topsocialmedia img:hover {
   opacity: 0.7;
 }
+
+/* TO TOP BUTTON (JB) */
+#topBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; 
+  outline: none; 
+  background-color: var(--lm-nav); 
+  color: var(--lm-navtxt); 
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; 
+  border-radius: 8px; 
+  font-size: 18px; 
+  text-transform: uppercase;
+  font-weight: bold;
+}
+#topBtn:hover {
+  background-color: #555; 
+}
+
 
 /* Main Image Heading */
 .headingImg {
@@ -368,6 +393,7 @@ h3,
 }
 
 address {
+  font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   text-align: center;
   font-style: normal;
@@ -375,8 +401,13 @@ address {
 
 .email a {
   color: var(--lm-navtxt);
+  font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.email a:hover {
+  color: var(--lm-default);
 }
 
 /* Footer Social Media */
@@ -396,6 +427,7 @@ address {
 /* Footer Form */
 form {
   color: var(--lm-navtxt);
+  font-family: 'Oswald', sans-serif;
   text-align: right;
   text-transform: uppercase;
   padding: 10px;
