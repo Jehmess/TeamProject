@@ -32,7 +32,7 @@ a:link {
   text-decoration: none;
 }
 
-.dark-h2 {
+.dark-h2 { /*Remove */
   font-family: "Oswald", sans-serif;
   color: #444444;
   text-align: center;
@@ -435,7 +435,7 @@ address {
 form {
   color: var(--lm-navtxt);
   font-family: 'Oswald', sans-serif;
-  text-align: right;
+  text-align: center;
   text-transform: uppercase;
   padding: 10px;
 }
@@ -460,9 +460,43 @@ textarea {
       font-size: 12pt;          
   }
 
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.6fr 2fr 0.5fr 2.5fr 0.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "topHead topHead topHead topHead"
+      "headingImg headingImg headingImg headingImg"
+      "navBar navBar navBar navBar"
+      "main main main main"
+      "footer footer footer footer";
+    height: 200vh;
+  }
+
   .textCenter {
     font-size: 30px;
   }
+
+  .navBar {
+    font-size: 10pt;
+  }
+
+  .contact {
+    font-size: 12px;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1.5fr;
+    grid-template-areas: "contact contact";
+    grid-area: contact;
+    width: 100%;
+  }
+
+  form, .topsocialmedia, .donatebutton {
+    visibility: hidden;
+  }
+
+
 }
 
 
