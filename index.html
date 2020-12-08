@@ -30,11 +30,11 @@
     <div class="grid-container">
       <div id="topHead" class="topHead">
         <div class="theme-switch-wrapper">
-          <label class="theme-switch" for="checkbox">
+          <label class="theme-switch" for="checkbox" title="Enable Dark Mode">
             <input type="checkbox" id="checkbox" />
             <div class="slider round"></div>
           </label>
-          <em>Enable Dark Mode!</em>
+          <em>Go Deep!</em>
         </div>
 
         <input
@@ -44,6 +44,9 @@
           title="Donate Today!"
           value="Donate"
         />
+
+        <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button> <!--RETURN TO TOP-->
+
         <div class="topsocialmedia">
           <a href="https://www.facebook.com/"
             ><img src="images/facebook.svg" alt="Facebook" title="Facebook"
@@ -59,23 +62,24 @@
 
       <div class="headingImg">
         <div id="banner" class="banner">
-          <img src="images/LightModeBanner.png" alt="Coral Reef" />
           <!-- Stock Photo by Adobe Photo Stock -->
+          <img src="images/LightModeBanner.png" alt="Coral Reef" /> 
+          <div class="textCenter" id="textCenter">Save the Ocean</div>
         </div>
       </div>
 
       <div id="navBar" class="navBar">
         <div class="nav1">
-          <p><a href="#news">News</a></p>
+          <p><a href="#news" title="Latest Ocean News">News</a></p>
         </div>
         <div class="nav2">
-          <p><a href="#aboutUs">About</a></p>
+          <p><a href="#aboutUs" title="About Us">About</a></p>
         </div>
         <div class="nav3">
-          <p><a href="#contactForm">Contact</a></p>
+          <p><a href="#contactForm" title="Contact Us">Contact</a></p>
         </div>
         <div class="nav4">
-          <p><a href="donate.html">Donate</a></p>
+          <p><a href="donate.html" title="Donate Today!">Donate</a></p>
         </div>
       </div>
 
@@ -209,7 +213,9 @@
       <div id="footer" class="footer">
         <div class="contact">
           <address>
-            <h3>Save the Ocean</h3>
+            <h3>
+              Save the Ocean              
+            </h3>
             123 Ocean Ave<br />
             Unit 203<br />
             Ottawa, ON<br />
@@ -218,7 +224,7 @@
 
           <div class="socialmedia">
             <h3>Connect With Us</h3>
-            <p>
+            <p id="email" class="email">
               <a href="mailto:hello@savetheocean.com">hello@savetheocean.com</a>
             </p>
             <a href="https://www.facebook.com/"
@@ -258,6 +264,6 @@
         </div>
       </div>
     </div>
-    <script src="/scripts.js"></script>
+    <script src="scripts.js"></script>
   </body>
 </html>

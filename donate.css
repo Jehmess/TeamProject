@@ -34,11 +34,11 @@ body{
   --dm-default: #A6B7BA;
 }
 
-a, a:active, a:link {
-  color: var(--lm-navtxt);
-  text-decoration: none;  
+h3 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  text-shadow: 1px 1px #444444;
 }
-
 
 .grid-container {
   display: grid;
@@ -57,6 +57,7 @@ a, a:active, a:link {
   grid-area: donateHeading;
   background: var(--lm-header);
   text-align: right;
+  border-bottom: 3px solid var(--lm-default);
 }
 
 /* DM Button */
@@ -144,6 +145,8 @@ a, a:active, a:link {
   grid-template-areas: 
   "donate-form donate-form donate-form donate-buttons";
   height: 86.25vh;
+  margin-top: 10px;
+  margin-right: 25%;
 }
 
 .alert{
@@ -151,7 +154,7 @@ a, a:active, a:link {
   font-size: 12pt;
 }
 .donate-buttons{
-  grid-area: donate-buttons;
+  grid-area: donate-buttons; 
 }
 
 .donateTitle {
@@ -159,13 +162,12 @@ a, a:active, a:link {
 }
 
 form {
-  background-color: var(--lm-body);
+  background-color: var(--lm-body);  
   text-transform: uppercase;
   font-weight: bold;
   width: 50%;
   margin-top: 10px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 50%;  
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -173,6 +175,40 @@ label {
   display: inline-block;
   width: 150px;
   text-align: right;
+}
+
+.submitBtn {
+  background-color: var(--lm-nav);
+  border: none;
+  border-radius: 8px;
+  color: var(--lm-body);
+  padding: 16px 32px;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;    
+}
+.submitBtn:hover {
+  background-color: var(--lm-header);
+}
+.submitBtn:active {  
+  transform: translateY(2px);
+}
+
+input[type=reset] {
+  background-color: var(--lm-nav);
+  border: none;
+  border-radius: 8px;
+  color: var(--lm-body);
+  padding: 16px 32px;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;    
 }
 
 .donateFooter {
@@ -202,17 +238,17 @@ label {
 
 .contact{  
   display: grid;
-  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-columns: 2fr 2fr;
   grid-template-rows: 1.5fr ;
   grid-template-areas:
-  "contact contact contact"  
+  "contact contact"  
   ;
   grid-area: contact;
   width: 100%;  
 }
 
 .footer p, address, h3, .socialmedia {
-  color: var(--lm-navtxt);
+  color: var(--lm-navtxt);  
   margin-left: auto;
   margin-right: auto;  
 }
@@ -224,9 +260,21 @@ label {
 }
 
 address {
+  font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   text-align: center;
   font-style: normal; 
+}
+
+.email a { 
+  font-family: 'Oswald', sans-serif;
+  color: var(--lm-navtxt);
+  text-transform: uppercase;
+  text-decoration: none;  
+}
+
+.email a:hover {
+  color: var(--lm-default);
 }
 
 /* Footer Social Media */
