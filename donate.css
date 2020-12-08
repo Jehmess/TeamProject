@@ -208,7 +208,7 @@ input{
   border-top: 3px solid #333333;
 }
 
-.contact{  
+/*.contact{  
   display: grid;
   grid-template-columns: 2fr 2fr 2fr;
   grid-template-rows: 1.5fr ;
@@ -217,7 +217,7 @@ input{
   ;
   grid-area: contact;
   width: 100%;  
-}
+}*/
 
 .donateFooter p, address, h3, .socialmedia {
   color: var(--lm-navtxt);
@@ -279,4 +279,27 @@ address {
 }
 .socialmedia img:hover {
   opacity: 0.7;
+}
+
+/* MEDIA QUERIES */
+/* For mobile phones: */
+@media only screen and (max-width: 600px) {
+  body {
+      font-size: 11pt;          
+  } 
+
+  .donateHeading {
+    height: 55px;
+  }  
+
+
+  .resetBtn, .submitBtn {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .topsocialmedia {
+    visibility: hidden;
+  }
+  
 }

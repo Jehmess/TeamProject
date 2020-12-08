@@ -116,7 +116,7 @@ a:link {
   padding: 10px 25px;
   border: none;
   border-radius: 8px;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
 }
 .donatebutton:active {
   background-color: var(--lm-navtxt);
@@ -127,7 +127,7 @@ a:link {
   color: var(--lm-default);
 }
 .donatebutton:hover {
-  background-color: #acd7cc;
+  background-color: #83aaa0;
   transition: 0.5s;
 }
 /* switch */
