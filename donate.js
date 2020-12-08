@@ -34,6 +34,7 @@ function validateForm(e){
     }
     if(donateForm.city.value == ""){
         document.getElementById('city').style.borderColor = 'red';
+        document.getElementById('cityWarning').innerHTML = '*';
         valid = false;
     }
     if(donateForm.province.options.selectedIndex === 0){
@@ -62,7 +63,7 @@ function validateForm(e){
 }
 
 function resetForm(){
-    document.getElementById('donateForm').reset();
+    location.reload();
     document.getElementById('displayer').style.visibility = 'hidden';
 }
 

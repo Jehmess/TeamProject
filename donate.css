@@ -74,6 +74,7 @@ h3 {
   margin-right: 10px;
   padding: 10px 25px;
   border: none;
+  height: 35px;
   border-radius: 8px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
@@ -114,9 +115,9 @@ h3 {
   grid-template-rows: auto;
   grid-template-areas: 
   "donate-form donate-form donate-form donate-buttons";
-  height: 86.25vh;
+  
   margin-top: 10px;
-  margin-right: 25%;
+  margin-right: 15%;
 }
 
 .alert{
@@ -124,7 +125,13 @@ h3 {
   font-size: 12pt;
 }
 .donate-buttons{
-  grid-area: donate-buttons; 
+  grid-area: donate-buttons;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: .5fr 2fr;
+  grid-template-areas: 
+  "paypaltitle"
+  "smart-button-container";
 }
 
 .donateTitle {
@@ -135,16 +142,22 @@ form {
   background-color: var(--lm-body);  
   text-transform: uppercase;
   font-weight: bold;
-  width: 60%;
+  width: 75%;
   margin-top: 10px;
-  margin-left: 45%;  
+  margin-left: 35%;  
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 label {
   display: inline-block;
   width: 150px;
-  text-align: right;
+  text-align: left;
+  margin: 10px;
+}
+input{
+  display: inline-block;
+  width: 175px;
+  height: 20px;
 }
 
 .submitBtn {
@@ -166,20 +179,27 @@ label {
 .submitBtn:active {  
   transform: translateY(2px);
 }
-
-input[type=reset] {
+.resetBtn {
   background-color: var(--lm-nav);
   border: none;
   border-radius: 8px;
   color: var(--lm-body);
   padding: 16px 32px;
-  font-size: 12px;
+  font-size: 18px;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
   margin: 4px 2px;
   cursor: pointer;    
 }
+.resetBtn:hover {
+  background-color: var(--lm-header);
+}
+.resetBtn:active {  
+  transform: translateY(2px);
+}
+
+
 
 .donateFooter {
   grid-area: donateFooter;

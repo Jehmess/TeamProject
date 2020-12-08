@@ -71,6 +71,7 @@
               <p>
                 <label for="city">City</label>
                 <input type="text" name="city" id="city">
+                <span id="cityWarning" class="alert"></span>
               </p>
 
               <p>
@@ -126,7 +127,7 @@
 
             
             <button class="submitBtn" name="submit" value="submit">submit</button>
-            <input type="reset" value="reset">
+            <button class="resetBtn" name="reset" value="reset" onclick="resetForm()">reset</button>
             
 
             </fieldset>
@@ -141,6 +142,10 @@
           </form>
         </div>
         <div class="donate-buttons">
+          <div class="paypaltitle">
+            <h2>Payment</h2>
+            <p>The Payment Prompt Will appear when information is verified</p>
+          </div>
           <div id="smart-button-container">
             <div id="displayer" style="text-align: center; visibility: hidden;" >
               <div id="paypal-button-container"></div>
@@ -178,7 +183,6 @@
         </div>
       </div>
     </div>
-    <script src="scripts.js"></script>
     <script src="donate.js"></script>
   </body>
 </html>
