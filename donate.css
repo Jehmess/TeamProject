@@ -60,37 +60,7 @@ h3 {
   border-bottom: 3px solid var(--lm-default);
 }
 
-/* DM Button */
-.deepSea {
-  display: inline-block;
-  background-color: var(--lm-navtxt);  
-  color: var(--lm-default);  
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;  
-  font-size: 15px;
-  font-weight: bold;
-  margin-top: 10px;
-  margin-right: 10px;
-  padding: 10px 25px;
-  border: none;
-  border-radius: 8px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
-.deepSea:active {
-  background-color: var(--lm-navtxt);
-  transform: translateY(2px);
-}
-.deepSea a, a:link {
-  color: var(--lm-default);   
-}
-.deepSea:hover {
-  background-color: var(--dm-header);
-  color: var(--dm-default); 
-  transition: 0.5s;
-}
-
-/* DONATE BUTTON */
+/* HOME BUTTON */
 .homebutton {
   display: inline-block;
   background-color: var(--lm-navtxt);  

@@ -24,9 +24,7 @@ function switchTheme(e) {
 
 toggleSwitch.addEventListener("change", switchTheme, false);
 
-<<<<<<< HEAD
 // https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8
-=======
 
 //To the Top Button
 topbutton = document.getElementById("topBtn");
@@ -45,4 +43,3 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
->>>>>>> c206efdfa9fcc5777ab8bfc2a32d570236283b53
