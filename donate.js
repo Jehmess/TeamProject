@@ -55,6 +55,7 @@ function validateForm(e){
 
     if(valid){
         document.getElementById('displayer').style.visibility = 'visible';
+        
     }
 
     return valid

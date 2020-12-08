@@ -22,7 +22,14 @@ body {
   --lm-header: #263140;
   --lm-nav: #35515f;
   --lm-footer: #263140;
-  --lm-default: #a6b7ba;  
+  --lm-default: #a6b7ba;
+  --lm-navtxt:
+}
+a,
+a:active,
+a:link {
+  color: var(--lm-navtxt);
+  text-decoration: none;
 }
 
 .dark-h2 { /*Remove */
