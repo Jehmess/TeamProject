@@ -457,6 +457,10 @@ textarea {
       font-size: 12pt;          
   }  
 
+  .topHead {
+    height: 50px;
+  }
+
   .textCenter {
     font-size: 30px;
   }
@@ -471,20 +475,36 @@ textarea {
     -webkit-text-stroke: 0px;
   }
 
+  .main {
+    display: grid;
+    grid-template-columns: 2fr 0.5fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-template-areas:
+      "overview overview"
+      "articles articles"
+      "aboutUs aboutUs"
+      "news news";
+    grid-area: main;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+
   .news, .aboutUs, .overview, .articles {
     text-align: left;
-  }
+  }   
 
   .icons img {
-    width: 35px;
-    height: 35px;
-  }
-
+    width: 50px;
+    height: 50px;
+  } 
+  
   .contact {
     font-size: 12px;
-    display: grid;
+    display: grid;    
     grid-template-columns: 2fr 2fr;
-    grid-template-rows: 1.5fr;
+    grid-template-rows: 1fr 0.5fr;
     grid-template-areas: "contact contact";
     grid-area: contact;
     width: 100%;
