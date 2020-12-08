@@ -23,7 +23,7 @@ body {
   --lm-nav: #35515f;
   --lm-footer: #263140;
   --lm-default: #a6b7ba;
-  --lm-navtxt:
+  --lm-navtxt:#557379;
 }
 a,
 a:active,
@@ -280,15 +280,13 @@ input:checked + .slider:before {
   font-size: 40px;
   font-weight: 800;
   text-align: center;
-  text-transform: uppercase;
-  -webkit-text-stroke: 2px #333333;
+  text-transform: uppercase;  
   text-shadow: 3px 3px #333333;
 }
 
 .navBar a {
   color: var(--lm-navtxt);
-  text-decoration: none;
-  -webkit-text-stroke: 1px var(--lm-default);
+  text-decoration: none;  
 }
 
 .nav1 {
