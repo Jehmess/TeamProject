@@ -70,7 +70,7 @@ window.onload=function(){
     document.getElementById('fnames').addEventListener('blur', function(){
         if(this.value !== ''){
             nameWarning.innerHTML = '';
-            fname.style.remove.borderColor;
+            fnames.style.remove.borderColor;
         }
     });
     document.getElementById('addresss').addEventListener('blur', function(){
