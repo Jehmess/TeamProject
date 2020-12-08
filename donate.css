@@ -292,14 +292,32 @@ address {
     height: 55px;
   }  
 
+  .donateMain {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-flow: column;      
+    align-content: space-around;      
+  }
+
 
   .resetBtn, .submitBtn {
     font-size: 12px;
     padding: 10px;
   }
 
+  .contact {
+    font-size: 12px;
+    display: grid;    
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 0.5fr;
+    grid-template-areas: "contact contact";
+    grid-area: contact;
+    width: 100%;    
+  }
+
   .topsocialmedia {
     visibility: hidden;
   }
-  
+
 }
