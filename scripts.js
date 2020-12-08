@@ -14,9 +14,11 @@ if (currentTheme) {
 
 function switchTheme(e) {
   if (e.target.checked) {
+    document.getElementById('selectMe').src = 'images/DarkModeBanner.png'
     document.documentElement.setAttribute("data-theme", "dark");
     localStorage.setItem("theme", "dark");
   } else {
+    document.getElementById('selectMe').src = 'images/LightModeBanner.png'
     document.documentElement.setAttribute("data-theme", "light");
     localStorage.setItem("theme", "light");
   }
