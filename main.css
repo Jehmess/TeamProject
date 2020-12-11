@@ -34,7 +34,7 @@ a:link {
 
 .dark-h2 { /*Remove */
   font-family: "Oswald", sans-serif;
-  color: #444444;
+  color: var(--lm-navtxt);
   text-align: center;
   text-transform: uppercase;
   text-shadow: 1px 1px #d8d8d8;
