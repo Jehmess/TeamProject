@@ -6,32 +6,17 @@ body{
   margin: 0;
   width: 100%;  
 }
-.body2{
-  background: var(--dm-body);
-  color: var(--dm-default) ;
-  font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
-  font-size: 14pt;
-  margin: 0;
-  width: 100%;
-}
 
 :root {
   /* LIGHT MODE BACKGROUNDS */
   --lm-body: #ECE9D4;
   --lm-header: #44656C;
   --lm-nav: #557379;
-  --lm-footer: #44656C;  
-
-  /* DARK MODE BACKGROUNDS */
-  --dm-body: #121212;
-  --dm-header: #263140;
-  --dm-nav: #35515F;
-  --dm-footer: #263140;  
+  --lm-footer: #44656C;
 
   /* TEXT */
   --lm-default: #333333;
-  --lm-navtxt: #bbdbd1;  
-  --dm-default: #A6B7BA;
+  --lm-navtxt: #bbdbd1;   
 }
 
 h3 {
@@ -208,16 +193,6 @@ input{
   border-top: 3px solid #333333;
 }
 
-.contact{  
-  display: grid;
-  grid-template-columns: 2fr 2fr 2fr;
-  grid-template-rows: 1.5fr ;
-  grid-template-areas:
-  "contact contact contact"  
-  ;
-  grid-area: contact;
-  width: 100%;  
-}
 
 .donateFooter p, address, h3, .socialmedia {
   color: var(--lm-navtxt);
@@ -241,12 +216,6 @@ input{
   color: var(--lm-navtxt);  
   margin-left: auto;
   margin-right: auto;  
-}
-
-.footer2 {
-  grid-area: footer;
-  background: var(--dm-header);
-  color: var(--dm-default);
 }
 
 address {
@@ -279,4 +248,51 @@ address {
 }
 .socialmedia img:hover {
   opacity: 0.7;
+}
+
+/* MEDIA QUERIES */
+/* For mobile phones: */
+@media only screen and (max-width: 600px) {
+  body {
+      font-size: 11pt;      
+  } 
+
+  .donateHeading {
+    height: 55px;
+  }  
+
+  .donateMain {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-flow: column;      
+    align-content: space-around;  
+    height: 200vh;  
+    margin-top: 10px;
+    margin-right: 100px;       
+  }
+
+  .grid-container {   
+    height: 300vh;
+  }
+
+  .resetBtn, .submitBtn {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .contact {
+    font-size: 12px;
+    display: grid;    
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 0.5fr;
+    grid-template-areas: "contact contact";
+    grid-area: contact;
+    width: 100%;    
+  }
+
+  .topsocialmedia {
+    visibility: hidden;
+  }
+
 }
