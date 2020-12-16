@@ -1,8 +1,16 @@
 {
 	"folders": [
 		{
+			"path": "..\\JavaScript\\Lab 11"
+		},
+		{
+			"path": "..\\JavaScript\\CST8209_James_Aufleger_040845311"
+		},
+		{
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "TeamProject"
+	}
 }
