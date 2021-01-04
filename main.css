@@ -18,15 +18,22 @@ body, html {
     --default: #333333;
 
     --header: #95b6bd;
+
+    --nav: #557379;  
+    --navtxt: #bbdbd1;
+
     --mainBody: #5e8c97;
     --subBody: #CAF0F8;
-    --footer: #44656c;
+    
+    --footer: #375258;
+
+    /*DARK MODE SCHEME */
+    --gunmetal: #263140;
+    --richBlack: #121212;
 
 
-/*
-    --lm-header: #44656c;
-    --lm-nav: #557379;  
-    --lm-navtxt: #bbdbd1;*/
+/*    --lm-header: #44656c;   */   
+    
 }
 
 
@@ -34,37 +41,127 @@ body, html {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0fr 0.4fr 1fr 0fr;
+    grid-template-rows: 0fr 0fr 0.4fr 1fr 0fr;
     gap: 0px 0px;
     grid-template-areas:
       "header header header header"
+      "navBar navBar navBar navBar"
       "mainImg mainImg mainImg mainImg"
       "mainBody mainBody mainBody mainBody"
       "footer footer footer footer";
 }
 
-
 /* Header */
 .header { 
     grid-area: header;
-    background-color: var(--header);
+    
+}
+.topHeader {    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 10px;
+    padding: 5px;    
+}
+/* Social Media Icons */
+.socialMedia a, .socialMedia a:link {  
+    font-size: 35px;
+    padding: 5px;
+    color: var(--default);
+    text-decoration: none; 
+}
+.socialMedia a:hover {    
+    color: var(--footer);
+}
+/*------------------------------------*/
+/* Dark Mode Toggle */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}  
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--gunmetal);
+    -webkit-transition: .4s;
+    transition: .4s;
+}  
+input:checked + .slider {
+    background-color: var(--richBlack);
+}  
+input:focus + .slider {
+    box-shadow: 0 0 1px #ccc;
+}  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+.slider.round {
+    border-radius: 34px;
+}  
+.slider.round:before {
+    border-radius: 50%;
+}
+/*------------------------------------*/
+/* End Header */
+
+
+/* Navigation */
+.navBar { 
+    grid-area: navBar;
+    background-color: var(--header);    
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
-    align-items: center;
+    align-items: center;   
+    border-bottom: 2px solid var(--default);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.topLinks a:link, a:active {
+.topLinks a:any-link {
+    color: var(--navtxt);
     font-size: 40pt;
     text-transform: uppercase;
     text-decoration: none;
     padding: 40px;
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--default);
+    text-shadow: 2px 2px 4px var(--default);
+}
+.topLinks a:any-link:hover {
+    color: var(--nav);
 }
 #title {
     font-family: 'Oswald', sans-serif;
+    color: var(--nav);
+    font-size: 60px;  
 }
-/* End Header */
+/* End Navigation */
 
 
 /* Banner Image */
@@ -75,15 +172,23 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
 }
+.mainImg:hover {
+    opacity: 0.5; /** Animation to represent polluted water **/
+    transition: 0.5s;
+}
+
 
 /* End Banner Image */
 
 /* Main Body */
 .mainBody { 
     grid-area: mainBody; 
-    background-color: linear-gradient(180deg, #82a8b0 0%, #5e8c97 51%, #44656c 75%); 
-    opacity: 0.5;    
+    background-color: linear-gradient(180deg, #82a8b0 0%, #5e8c97 51%, #44656c 75%);    
 }
 
 .subBody {
@@ -110,7 +215,7 @@ body, html {
     background-size: 100%;     
 }
 
-.aboutus {
+.oceanfacts {
     background-image: url('images/underwater3.jpeg');
     background-attachment: fixed;
     background-position: center;
@@ -125,18 +230,33 @@ body, html {
     background-repeat: no-repeat;
     background-size: 100%;     
 }
-
-
-
 /* End Main Body */
 
 
 /* Footer */
 .footer { 
     grid-area: footer; 
-    background-color: var(--footer);
-    border: 1px black solid;
+    background-color: var(--footer);      
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.footerColumn {
+    float: left;
+    width: 23%;
+    padding: 10px;     
+    margin-left: 5px;
+}
+.footerRow:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 /* End Footer */
+
+.copyright {        
+    text-align: center;
+    font-size: small;
+    padding: 5px;
+}
 
 

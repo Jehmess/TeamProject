@@ -3,14 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSS-->
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="main.css">
 
     <!-- FONTS -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,800;1,900&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+
+    <!--ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <title>Save The Ocean Project</title>
 
 </head>
 
@@ -19,12 +24,28 @@
     <div class="grid-container">
 
         <div class="header">
+            <div class="topHeader">
+
+                <div class="socialMedia">
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram-square"></i></a>                    
+                    <a href="https://www.pinterest.com"><i class="fab fa-pinterest-square"></i></a>
+                </div>               
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round" title="Dark Mode"></span>        
+                </label>
+            </div>           
+        </div>
+
+        <div class="navBar">
             <div class="topLinks">
-                <a href="#news">News</a>
-                <a href="#aboutus">About Us</a>
-                <a id="title" href="index.html">Save the Ocean</a>
-                <a href="#contact">Contact</a>
-                <a href="#donate">Donate</a>
+                <a href="#news" title="Latest News">News</a>
+                <a href="#aboutus" title="About Us">About Us</a>
+                <a id="title" href="index.html" title="Home">Save the Ocean</a>
+                <a href="#contact" title="Contact Us">Contact</a>
+                <a href="#donate" title="Donate Today!">Donate</a>
             </div>
 
 
@@ -74,10 +95,10 @@
                         Nunc in
                         ipsum enim. Proin ac nunc in libero tristique congue.
                     </p>
-                </div>
+                </div>                
 
-                <div class="aboutus" id="aboutus">
-                    <h1>About Us</h1>
+                <div class="oceanfacts" id="oceanfacts">
+                    <h1>Ocean Facts</h1>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac congue nibh. Duis lorem ipsum,
                         pellentesque
@@ -96,8 +117,8 @@
                     </p>
                 </div>
 
-                <div class="oceanfacts" id="oceanfacts">
-                    <h1>Ocean Facts</h1>
+                <div class="aboutus" id="aboutus">
+                    <h1>About Us</h1>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac congue nibh. Duis lorem ipsum,
                         pellentesque
@@ -165,8 +186,47 @@
         </div>
 
         <div class="footer">
-            Footer
+            <div class="footerSub">
+                <div class="footerRow">
+                    <div class="footerColumn">
+                        <h2>About Us</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet luctus nisi, nec vulputate urna. Sed aliquam dictum auctor. 
+                            Donec consectetur pretium pellentesque. Ut sagittis fermentum diam, eu sollicitudin nibh laoreet a. Sed cursus lacus metus, vitae sodales sapien ullamcorper nec. 
+                        </p>
+                    </div>
+                    <div class="footerColumn">
+                        <h2>Extra Links</h2>
+                        <p>
+                            <a href="#">Link 1</a><br>
+                            <a href="#">Link 2</a><br>
+                            <a href="#">Link 3</a><br>                         
+                            <a href="#">Privacy Policy</a><br>
+                            <a href="#">Terms of Service</a>
+                        </p>
+                    </div>
+                    <div class="footerColumn">
+                        <h2>Contact</h2>
+                        <p>
+                            <a href="tel:555-555-555">(555) 555-5555</a><br>                            
+                            <a href="mailto:business@email.com">business@email.com</a>                            
+                        </p>
+                    </div>
+                    <div class="footerColumn">
+                        <h2>Follow Us @</h2>
+                        <p class="followUs">
+                            <a href="https://www.facebook.com"><i class="fab fa-facebook-square"> Facebook</i></a><br>
+                            <a href="https://twitter.com"><i class="fab fa-twitter-square"> Twitter</i></a><br>
+                            <a href="https://www.instagram.com"><i class="fab fa-instagram-square"> Instagram</i></a><br>                
+                            <a href="https://www.pinterest.com"><i class="fab fa-pinterest-square"> Pinterest</i></a>
+                        </p>
+                    </div>
+                </div>
         </div>
+
+        <div class="copyright">
+            Copyright © 2020 - 20##<br>All Rights Reserved<br>Ottawa, Canada
+        </div>      
 
     </div>
 
