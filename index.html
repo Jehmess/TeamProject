@@ -5,11 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- CSS-->
+    <!--CSS-->
     <link rel="stylesheet" href="main.css">
 
-    <!-- FONTS -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,800;1,900&display=swap" rel="stylesheet">
+    <!--JS -->
+    <script src="main.js" defer></script> 
+
+    <!--FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,800;1,900&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
 
     <!--ICONS-->
@@ -24,26 +28,28 @@
     <div class="grid-container">
 
         <div class="header">
-            <div class="topHeader">
+            <div class="topLeft">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round" title="Dark Mode"></span>
+                </label>
+            </div>
 
+            <div class="topRight">
                 <div class="socialMedia">
                     <a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
                     <a href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
-                    <a href="https://www.instagram.com"><i class="fab fa-instagram-square"></i></a>                    
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram-square"></i></a>
                     <a href="https://www.pinterest.com"><i class="fab fa-pinterest-square"></i></a>
-                </div>               
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider round" title="Dark Mode"></span>        
-                </label>
-            </div>           
+                </div>
+            </div>
         </div>
 
         <div class="navBar">
-            <div class="topLinks">
-                <a href="#news" title="Latest News">News</a>
+            <div id="navbar" class="topLinks">
+                <a href="index.html" title="Home">Home</a>
                 <a href="#aboutus" title="About Us">About Us</a>
-                <a id="title" href="index.html" title="Home">Save the Ocean</a>
+                <a href="#news" title="Latest News">News</a>
                 <a href="#contact" title="Contact Us">Contact</a>
                 <a href="#donate" title="Donate Today!">Donate</a>
             </div>
@@ -95,7 +101,7 @@
                         Nunc in
                         ipsum enim. Proin ac nunc in libero tristique congue.
                     </p>
-                </div>                
+                </div>
 
                 <div class="oceanfacts" id="oceanfacts">
                     <h1>Ocean Facts</h1>
@@ -191,8 +197,10 @@
                     <div class="footerColumn">
                         <h2>About Us</h2>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet luctus nisi, nec vulputate urna. Sed aliquam dictum auctor. 
-                            Donec consectetur pretium pellentesque. Ut sagittis fermentum diam, eu sollicitudin nibh laoreet a. Sed cursus lacus metus, vitae sodales sapien ullamcorper nec. 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet luctus nisi,
+                            nec vulputate urna. Sed aliquam dictum auctor.
+                            Donec consectetur pretium pellentesque. Ut sagittis fermentum diam, eu sollicitudin nibh
+                            laoreet a. Sed cursus lacus metus, vitae sodales sapien ullamcorper nec.
                         </p>
                     </div>
                     <div class="footerColumn">
@@ -200,7 +208,7 @@
                         <p>
                             <a href="#">Link 1</a><br>
                             <a href="#">Link 2</a><br>
-                            <a href="#">Link 3</a><br>                         
+                            <a href="#">Link 3</a><br>
                             <a href="#">Privacy Policy</a><br>
                             <a href="#">Terms of Service</a>
                         </p>
@@ -208,8 +216,8 @@
                     <div class="footerColumn">
                         <h2>Contact</h2>
                         <p>
-                            <a href="tel:555-555-555">(555) 555-5555</a><br>                            
-                            <a href="mailto:business@email.com">business@email.com</a>                            
+                            <a href="tel:555-555-555">(555) 555-5555</a><br>
+                            <a href="mailto:business@email.com">business@email.com</a>
                         </p>
                     </div>
                     <div class="footerColumn">
@@ -217,18 +225,19 @@
                         <p class="followUs">
                             <a href="https://www.facebook.com"><i class="fab fa-facebook-square"> Facebook</i></a><br>
                             <a href="https://twitter.com"><i class="fab fa-twitter-square"> Twitter</i></a><br>
-                            <a href="https://www.instagram.com"><i class="fab fa-instagram-square"> Instagram</i></a><br>                
+                            <a href="https://www.instagram.com"><i class="fab fa-instagram-square">
+                                    Instagram</i></a><br>
                             <a href="https://www.pinterest.com"><i class="fab fa-pinterest-square"> Pinterest</i></a>
                         </p>
                     </div>
                 </div>
+            </div>
+
+            <div class="copyright">
+                Copyright © 2020 - 20##<br>All Rights Reserved<br>Ottawa, Canada
+            </div>
+
         </div>
-
-        <div class="copyright">
-            Copyright © 2020 - 20##<br>All Rights Reserved<br>Ottawa, Canada
-        </div>      
-
-    </div>
 
 </body>
 
