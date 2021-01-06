@@ -56,27 +56,37 @@ body, html {
     grid-area: header;    
 }
 
-.topLeft {
+.subHeader {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+    
+
+/*
+.headerColumn {
     float: left;
-    padding: 5px;
-    margin-top: 2px;
+    width: 23%;
+    padding: 10px;     
+    margin-left: 5px;
 }
+.headerRow:after {
+    content: "";
+    display: table;
+    clear: both;
+}*/
 
-.topRight {
-    float: right;
-    margin-right: 10px;
-    margin: 5px;
-}
-
-
-#title {
+#phoneNum, #email {    
+    color: var(--navtxt); 
     font-family: 'Oswald', 'sans-serif';
-    color: var(--navtxt);
-    font-size: 40px;    
-    text-transform: uppercase; 
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: var(--nav);  
+    font-size: 18pt;  
+    text-decoration: none; 
+    text-transform: uppercase;    
     text-shadow: 3px 3px 5px var(--default);
+}
+#phoneNum:hover, #email:hover {
+    color: var(--default);
 }
 /*------------------------------------*/
 /* Dark Mode Toggle */
@@ -169,9 +179,8 @@ input:checked + .slider:before {
 .sticky {
     position: fixed;
     top: 0;
-    width: 100%;
-    border-top: 2px solid var(--default);
-    border-bottom: 2px solid var(--default);    
+    width: 100%;    
+    /*border-bottom: 2px solid var(--default);*/
 } 
   
 .topLinks a:any-link {
@@ -202,8 +211,8 @@ input:checked + .slider:before {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    border-top: 2px solid var(--default);
-    border-bottom: 2px solid var(--default);
+    /*border-top: 2px solid var(--default);
+    border-bottom: 2px solid var(--default);*/
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
 }
 .mainImg:hover {
@@ -221,7 +230,7 @@ input:checked + .slider:before {
 }
 
 .subBody {
-    width: 95%;    
+    width: 100%;    
     margin-top: 10px;    
     margin-right: auto;
     margin-bottom: 20px;
@@ -282,7 +291,8 @@ input:checked + .slider:before {
 }
 /* End Footer */
 
-.copyright {      
+.copyright {  
+    background-color: var(--nav);    
     text-align: center;
     font-size: small;
     padding: 5px;
