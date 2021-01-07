@@ -83,10 +83,11 @@ body, html {
     font-size: 18pt;  
     text-decoration: none; 
     text-transform: uppercase;    
-    text-shadow: 3px 3px 5px var(--default);
+    text-shadow: 2px 2px 4px var(--default);
 }
 #phoneNum:hover, #email:hover {
     color: var(--default);
+    text-shadow: 1px 1px 2px var(--default);
 }
 /*------------------------------------*/
 /* Dark Mode Toggle */
@@ -146,7 +147,10 @@ input:checked + .slider:before {
     font-size: 35px;
     padding: 5px;
     color: var(--default);
-    text-decoration: none; 
+    text-decoration: none;     
+}
+.fa-facebook, .fa-twitter, .fa-instagram, .fa-phone-alt, .fa-envelope {
+    filter:drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.2));    
 }
 .socialMedia a:hover {    
     color: var(--footer);
@@ -180,7 +184,7 @@ input:checked + .slider:before {
     position: fixed;
     top: 0;
     width: 100%;    
-    /*border-bottom: 2px solid var(--default);*/
+    border-bottom: 4px solid var(--nav);
 } 
   
 .topLinks a:any-link {
@@ -289,10 +293,35 @@ input:checked + .slider:before {
     display: table;
     clear: both;
 }
+h2 {
+    color: var(--navtxt);    
+    font-family: 'Oswald', 'sans-serif';
+    font-size: 20pt;  
+    text-decoration: none; 
+    text-transform: uppercase;    
+    text-shadow: 2px 2px 4px var(--default);
+}
+.footerAbout {
+    color: var(--nav);
+    font-family: 'Oswald', 'sans-serif';
+    text-shadow: 2px 2px 4px var(--default);
+}
+.footer a:any-link, .fa-facebook-square, .fa-twitter-square, .fa-instagram-square {
+    color: var(--navtxt); 
+    font-family: 'Oswald', 'sans-serif';
+    font-size: 16pt;  
+    text-decoration: none; 
+    text-transform: uppercase;    
+    text-shadow: 2px 2px 4px var(--default);
+}
+.footer a:any-link:hover {
+    color: var(--nav);
+}
 /* End Footer */
 
 .copyright {  
-    background-color: var(--nav);    
+    background-color: var(--nav);  
+    color: var(--default);  
     text-align: center;
     font-size: small;
     padding: 5px;
