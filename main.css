@@ -185,6 +185,7 @@ input:checked + .slider:before {
     top: 0;
     width: 100%;    
     border-bottom: 4px solid var(--nav);
+    z-index: 1;
 } 
   
 .topLinks a:any-link {
@@ -206,12 +207,13 @@ input:checked + .slider:before {
 
 /* Banner Image */
 .mainImg { 
-    grid-area: mainImg; 
+    grid-area: mainImg;   
     background-image: url('images/underwater1.jpeg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;  
+    text-align: center;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -219,11 +221,67 @@ input:checked + .slider:before {
     border-bottom: 2px solid var(--default);*/
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
 }
-.mainImg:hover {
-    opacity: 0.5; /** Animation to represent polluted water **/
-    transition: 0.5s;
+/*
+.mainImg:hover{ 
+    opacity: 0.5; /** Animation to represent polluted water **/ 
+    /*transition: 0.5s; 
+} */
+.imgTitle {
+    position: absolute;
+    color: var(--navtxt);
+    font-family: 'Oswald', 'san-serif';
+    font-size: 90pt;
+    text-transform: uppercase;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+    text-shadow: 2px 2px 4px var(--default); 
+     
 }
-
+.countdownTimer { 
+    position: absolute;   
+    background-color: rgb(202, 240, 248, 50%);
+    color: var(--navtxt);
+    font-family: 'Oswald', 'san-serif';
+    font-size: 50pt;
+    text-transform: uppercase; 
+    text-shadow: 2px 2px 4px var(--default);  
+    top: 66%;   
+    left: 50%;
+    transform: translate(-50%, -50%);  
+    padding: 20px; 
+    border: 4px solid var(--navtxt);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+.contScroll {
+    position: absolute;
+    color: var(--navtxt);
+    font-family: 'Oswald', 'san-serif';
+    font-size: 30pt;
+    text-transform: uppercase;
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+    text-shadow: 2px 2px 4px var(--default); 
+}
+.fa-angle-double-down {
+    position: absolute;  
+    color: var(--navtxt);    
+    font-size: 60pt;  
+    text-shadow: 2px 2px 4px var(--default);  
+    top: 90%;   
+    left: 50%;
+    transform: translate(-50%, -50%);       
+    text-shadow: 2px 2px 4px var(--default);   
+    animation: arrowMove 5s infinite;
+    -moz-animation: arrowMove 5s infinite; 
+    -webkit-animation: arrowMove 5s infinite;  
+}
+@keyframes arrowMove {    
+    from {top: 85%;}
+    100% {color: var(--footer);}
+    to {top: 105%;}
+}
 
 /* End Banner Image */
 
@@ -279,9 +337,7 @@ input:checked + .slider:before {
 .footer { 
     grid-area: footer; 
     background-color: var(--footer);      
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 .footerColumn {
     float: left;
     width: 23%;
@@ -324,7 +380,5 @@ h2 {
     color: var(--default);  
     text-align: center;
     font-size: small;
-    padding: 5px;
+    padding: 5px;    
 }
-
-
