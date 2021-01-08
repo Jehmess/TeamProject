@@ -232,7 +232,7 @@ input:checked + .slider:before {
     font-family: 'Oswald', 'san-serif';
     font-size: 90pt;
     text-transform: uppercase;
-    top: 50%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);    
     text-shadow: 2px 2px 4px var(--default); 
@@ -246,7 +246,7 @@ input:checked + .slider:before {
     font-size: 50pt;
     text-transform: uppercase; 
     text-shadow: 2px 2px 4px var(--default);  
-    top: 66%;   
+    top: 50%;   
     left: 50%;
     transform: translate(-50%, -50%);  
     padding: 20px; 
@@ -259,7 +259,7 @@ input:checked + .slider:before {
     font-family: 'Oswald', 'san-serif';
     font-size: 30pt;
     text-transform: uppercase;
-    top: 78%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);    
     text-shadow: 2px 2px 4px var(--default); 
@@ -269,7 +269,7 @@ input:checked + .slider:before {
     color: var(--navtxt);    
     font-size: 60pt;  
     text-shadow: 2px 2px 4px var(--default);  
-    top: 90%;   
+    top: 80%;   
     left: 50%;
     transform: translate(-50%, -50%);       
     text-shadow: 2px 2px 4px var(--default);   
@@ -278,11 +278,10 @@ input:checked + .slider:before {
     -webkit-animation: arrowMove 5s infinite;  
 }
 @keyframes arrowMove {    
-    from {top: 85%;}
-    100% {color: var(--footer);}
-    to {top: 105%;}
+    from {top: 82%;}
+    to {top: 96%;}
+    100% {color: var(--footer);}    
 }
-
 /* End Banner Image */
 
 /* Main Body */
@@ -357,12 +356,13 @@ h2 {
     text-transform: uppercase;    
     text-shadow: 2px 2px 4px var(--default);
 }
-.footerAbout {
+.footerAbout, address {
     color: var(--nav);
     font-family: 'Oswald', 'sans-serif';
     text-shadow: 2px 2px 4px var(--default);
+    font-style: normal;
 }
-.footer a:any-link, .fa-facebook-square, .fa-twitter-square, .fa-instagram-square {
+.footer a:any-link, .fa-facebook-square, .fa-twitter-square, .fa-instagram-square, .fa-github {
     color: var(--navtxt); 
     font-family: 'Oswald', 'sans-serif';
     font-size: 16pt;  
