@@ -273,9 +273,9 @@ input:checked + .slider:before {
     left: 50%;
     transform: translate(-50%, -50%);       
     text-shadow: 2px 2px 4px var(--default);   
-    animation: arrowMove 5s infinite;
-    -moz-animation: arrowMove 5s infinite; 
-    -webkit-animation: arrowMove 5s infinite;  
+    animation: arrowMove 3s infinite;
+    -moz-animation: arrowMove 3s infinite; 
+    -webkit-animation: arrowMove 3s infinite;  
 }
 @keyframes arrowMove {    
     from {top: 82%;}
@@ -304,6 +304,9 @@ input:checked + .slider:before {
     margin-top: 10px;   
     margin-bottom: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.footerAbout {
+    text-align: justify;
 }
 
 .overview {
@@ -340,7 +343,7 @@ input:checked + .slider:before {
 .footerColumn {
     float: left;
     width: 23%;
-    padding: 10px;     
+    padding: 15px;     
     margin-left: 5px;
 }
 .footerRow:after {
@@ -357,12 +360,12 @@ h2 {
     text-shadow: 2px 2px 4px var(--default);
 }
 .footerAbout, address {
-    color: var(--nav);
+    color: var(--navtxt);
     font-family: 'Oswald', 'sans-serif';
     text-shadow: 2px 2px 4px var(--default);
     font-style: normal;
 }
-.footer a:any-link, .fa-facebook-square, .fa-twitter-square, .fa-instagram-square, .fa-github {
+.footer a:any-link, .fa-facebook-square, .fa-twitter-square, .fa-instagram-square, .fa-github, .fa-angle-up {
     color: var(--navtxt); 
     font-family: 'Oswald', 'sans-serif';
     font-size: 16pt;  
@@ -382,3 +385,25 @@ h2 {
     font-size: small;
     padding: 5px;    
 }
+
+/* To Top */
+#topBtn {
+    display: none; 
+    position: fixed; 
+    background-color: var(--gunmetal) ;
+    color: var(--subBody);
+    text-align: center;
+    bottom: 20px; 
+    right: 35px; 
+    z-index: 99; /* Make sure it does not overlap */  
+    padding: 5px 15px;   
+    cursor: pointer; /* Add a mouse pointer on hover */     
+    font-size: 50px; /* Increase font size */
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#topBtn:hover {
+    background-color: var(--subBody);
+    color: var(--gunmetal);
+} 
